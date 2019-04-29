@@ -13,8 +13,16 @@
 </head>
 
 <body>
+  <?php include('header.php');?>
 
+  <div class="container-fluid">
+    <div class="row index">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+      </div>
+    </div>
+  </div>
 
+  <?php include('footer.php');?>
 </body>
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
