@@ -20,9 +20,9 @@
       </div>
       <!--Icone de connexion et de déconnexion-->
       <ul>
-        <li><a href="#">Carte Interactive</a></li>
-        <li><a href="#">Répertoire</a></li>
-        <li><a href="#">Espace Suivi</a></li>
+        <li><a href="carte.php">Carte Interactive</a></li>
+        <li><a href="repertoire.php">Répertoire</a></li>
+        <li><a href="espace.php">Espace Suivi</a></li>
         <li><a href="#">Support Administrateur</a></li>
         <div class="dropdown show">
           <li><a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdown" aria-haspopu="true" aria-expanded="false">Infos Pratique</a></li>
@@ -30,7 +30,7 @@
             <li><a class="dropdown-item" href="#">Réglement</a></li>
             <li><a class="dropdown-item" href="#">Charte réseaux</a></li>
             <li><a class="dropdown-item" href="#">Tarifs</a></li>
-            <li><a class="dropdown-item" href="#">Liste du répertoire</a></li>
+            <li><a class="dropdown-item" href="repertoire.php">Liste du répertoire</a></li>
           </div>
         </div>
         <li><a><i class="fas fa-sign-in-alt"></i></a></li>
