@@ -12,5 +12,8 @@
 </head>
 
 <body>
+<footer class="sticky-bottom pt-5 pb-5" style="background-color:#023871 z-index:999;" >
+<h4 class="text-center" style="color:#E5BB16" >&copy Etoile Champenoise</h5>
+</footer>
 </body>
 <html>
