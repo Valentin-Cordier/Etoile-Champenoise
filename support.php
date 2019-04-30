@@ -104,7 +104,7 @@
 				<form action="/action_page.php">
 					Date:
 					<input type="date" name="date">
-					<input type="submit">
+
 				</form>
 			</div>
 			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"></div>
