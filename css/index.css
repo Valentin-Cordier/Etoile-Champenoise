@@ -1,0 +1,20 @@
+html{
+    height: 100%;
+}
+
+body{
+    position: relative;
+    min-height: 100%;
+    background-color: white;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.index {
+    background-color: rgb(2, 56, 113);
+    min-height: 40em;
+    text-align : center;
+    color: white;
+}
