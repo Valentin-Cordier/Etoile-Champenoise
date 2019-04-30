@@ -99,7 +99,7 @@ nav ul li a {
 .fa-sign-out-alt {
   color: white;
   cursor: pointer;
-  display: none !important;
+  display: none ;
 }
 
 /*.fa-sign-out-alt:hover {
