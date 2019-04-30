@@ -25,12 +25,12 @@
         <li><a href="espace.php">Espace Suivi</a></li>
         <li><a href="#">Support Administrateur</a></li>
         <div class="dropdown show">
-          <li><a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdown" aria-haspopu="true" aria-expanded="false">Infos Pratique</a></li>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Réglement</a></li>
-            <li><a class="dropdown-item" href="#">Charte réseaux</a></li>
-            <li><a class="dropdown-item" href="#">Tarifs</a></li>
-            <li><a class="dropdown-item" href="repertoire.php">Liste du répertoire</a></li>
+          <li class=dropdown><a href="javascript:void(0)" class="dropbtn">Infos Pratique</a></li>
+          <div class="dropdown-content">
+            <li><a href="#">Réglement</a></li>
+            <li><a href="#">Charte réseaux</a></li>
+            <li><a href="#">Tarifs</a></li>
+            <li><a href="repertoire.php">Liste du répertoire</a></li>
           </div>
         </div>
         <li><a><i class="fas fa-sign-in-alt"></i></a></li>
