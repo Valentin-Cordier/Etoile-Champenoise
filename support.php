@@ -112,6 +112,7 @@
 		</div>
 	</div>
 	<div class="espace"></div>
+	<?php include('footer.php');?>
 	<!----------------------------- SCRIPT ----------------------->
 	<script src="js/main.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
