@@ -4,7 +4,7 @@ html {
 
 body {
   min-height: 100%;
-  background-color: black;
+  background-color: white;
   min-height: 100%;
   margin: 0;
   padding: 0;
@@ -34,32 +34,38 @@ nav {
   height: 5em;
   line-height: 3em;
   border: none;
-  background-color: #023871;
+  background-color: #023871 !important;
 }
 
 /*positionnement des liens ainsi que la transition lorsque la souris passe dessus*/
 nav ul {
   float: right;
-  padding-right: 1em;
+  padding-inline-start: 0;
 }
 
 nav ul li {
   list-style-type: none;
-  display: inline-block;
+  display: inline-grid;
   line-height: 5em;
   transition: 0.8s all;
 }
 
 /*changement de couleur de fond au passage de la souris sur les liens*/
 nav ul li:hover {
-  background-color: #E5BB16;
+  background-color: #E5BB16 !important;
 }
 
 nav ul li a {
   text-decoration: none !important;
-  color: white;
+  color: white !important;
   opacity: 1;
-  padding: 0 1em;
+  padding: 0em 1em 0em 1em;
+}
+
+.btn-secondary {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  border-radius: 5%;
 }
 
 /*Responsivité bar nav*/
@@ -71,6 +77,9 @@ nav ul li a {
   color: white;
   font-size: 3em;
   display: none;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
 }
 
 .toggle:hover {
@@ -97,24 +106,24 @@ nav ul li a {
   color: #023871;
   display: none;
 }*/
-@media (max-width: 951px) {
+@media (max-width: 952px) {
   .toggle {
     display: block;
   }
 
   ul {
-    width: 100%;
+    width: 13em;
     display: none;
     background-color: #023871;
   }
 
   ul li {
     display: none;
-    text-align: center;
+    text-align: right;
     background-color: #023871;
   }
 }
 
 .active {
-  display: block;
+  display: inline-grid;
 }

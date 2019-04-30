@@ -24,23 +24,29 @@
         <li><a href="#">Répertoire</a></li>
         <li><a href="#">Espace Suivi</a></li>
         <li><a href="#">Support Administrateur</a></li>
-        <li><a href="#">Infos Pratique</a></li>
+        <div class="dropdown show">
+          <li><a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdown" aria-haspopu="true" aria-expanded="false">Infos Pratique</a></li>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Réglement</a></li>
+            <li><a class="dropdown-item" href="#">Charte réseaux</a></li>
+            <li><a class="dropdown-item" href="#">Tarifs</a></li>
+            <li><a class="dropdown-item" href="#">Liste du répertoire</a></li>
+          </div>
+        </div>
         <li><a><i class="fas fa-sign-in-alt"></i></a></li>
         <!--<li><a><i class="fas fa-sign-out-alt"></i></a></li>-->
-        
+
       </ul>
     </nav>
 </body>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<script
-  src="https://code.jquery.com/jquery-3.4.0.js"
-  integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
-  crossorigin="anonymous"></script>
-  <script>
-  $('document').ready(function(){
-          $('.menu').click(function(){
-            $('ul').toggleClass('active');
-        })
-      })
+<script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+<script>
+  $('document').ready(function() {
+    $('.menu').click(function() {
+      $('ul').toggleClass('active');
+    })
+  })
 </script>
+
 </html>
