@@ -20,7 +20,7 @@
       </div>
       <!--Icone de connexion et de déconnexion-->
       <ul>
-        <li><a href="#">Carte Interactive</a></li>
+        <li><a href="carte.php">Carte Interactive</a></li>
         <li><a href="#">Répertoire</a></li>
         <li><a href="#">Espace Suivi</a></li>
         <li><a href="#">Support Administrateur</a></li>
