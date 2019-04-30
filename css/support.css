@@ -16,7 +16,7 @@ body{
 }
 
 .espace {
-    height: 4em;
+    height: 3em;
 }
 
 .btn-primary {
@@ -28,13 +28,14 @@ body{
 .titreG {
     text-align: center;
 }
-
+.center-block {
+  float:none;
+}
 /********************************* PARRALAXE **************************************/
 
 
-
 .parallax-window {
-    min-height: 20em;
+    min-height: 500px;
     background: transparent;
 }
 
