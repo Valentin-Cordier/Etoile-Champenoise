@@ -1,0 +1,42 @@
+/********************************* GENERAL **************************************/
+
+html{
+    height: 100%;
+}
+
+body{
+    position: relative;
+    min-height: 100%;
+    background-color: white;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.espace {
+    height: 3em;
+}
+
+.btn-primary {
+    background-color: rgb(2, 56, 113);
+}
+
+/****************************** GESTION COMPTE **************************************/
+
+.titreG {
+    text-align: center;
+}
+.center-block {
+  float:none;
+}
+/********************************* PARRALAXE **************************************/
+
+
+.parallax-window {
+    min-height: 500px;
+    background: transparent;
+}
+
+/********************************* PARRALAXE **************************************/
