@@ -41,6 +41,7 @@ nav {
 nav ul {
   float: right;
   padding-inline-start: 0;
+  margin-block-end: 0;
 }
 
 nav ul li {
