@@ -23,17 +23,17 @@
 
 	<div class="container-fluid text-center">
 		<div class="row">
-			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
 				<a href="#1">
 					<p class="onglet"> Gestion de compte </p>
 				</a>
 			</div>
-			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
 				<a href="#2">
 					<p class="onglet"> Gestion des messages pré-définis </p>
 				</a>
 			</div>
-			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
 				<a href="#3">
 					<p class="onglet"> Gestion des messages </p>
 				</a>
