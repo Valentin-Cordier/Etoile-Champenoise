@@ -56,7 +56,7 @@
 	<div class="espace"></div>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"> </div>
+			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"> </div>
 			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
 				<form>
 					<div class="form-group">
@@ -75,7 +75,7 @@
 						</select>
 					</div>
 				</form>
-				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"> </div>
+				<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"> </div>
 			</div>
 
 		</div>
@@ -84,11 +84,11 @@
 	<!--------- BOUTON GESTION DE COMPTE ---------->
 	<div class="container-fluid text-center">
 		<div class="row">
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"> </div>
+			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"> </div>
 			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
 				<button type="submit" class="btn btn-primary btn-lg">Créer</button>
 			</div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"></div>
+			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"></div>
 		</div>
 	</div>
 	<div class="espace"></div>
@@ -109,7 +109,7 @@
 	<div class="espace"></div>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"> </div>
+			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"> </div>
 			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
 				<form>
 					<div class="form-group">
@@ -117,18 +117,18 @@
 						<textarea id="textarea" class="form-control"></textarea>
 					</div>
 				</form>
-				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"></div>
+				<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"></div>
 			</div>
 		</div>
 	</div>
 	<!--------- BOUTON GESTION DES MESSAGES PRE DEFINIS ---------->
 	<div class="container-fluid text-center">
 		<div class="row">
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"> </div>
+			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"> </div>
 			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
 				<button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
 			</div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"></div>
+			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"></div>
 		</div>
 	</div>
 	<div class="espace"></div>
@@ -149,7 +149,7 @@
 	<div class="espace"></div>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"> </div>
+			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"> </div>
 			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
 				<form>
 					<div class="form-group">
@@ -157,13 +157,13 @@
 						<textarea id="textarea" class="form-control"></textarea>
 					</div>
 				</form>
-				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"></div>
+				<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"></div>
 			</div>
 		</div>
 	</div>
 	<div class="container text-center">
 		<div class="row">
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"> </div>
+			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"> </div>
 			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
 				<form action="/action_page.php">
 					Date:
@@ -171,7 +171,7 @@
 
 				</form>
 			</div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"></div>
+			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"></div>
 
 		</div>
 	</div>
@@ -179,16 +179,26 @@
 	<!--------- BOUTON GESTION DES MESSAGES ---------->
 	<div class="container-fluid text-center">
 		<div class="row">
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"> </div>
+			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"> </div>
 			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
 				<button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
 			</div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"></div>
+			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"></div>
 		</div>
 	</div>
 	<div class="espace"></div>
+	<div class="espace"></div>
+	<div class="container-fluid">
+		<div class="row titreG">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+	<p>&#8600 Retour en haut de page &#8601</p>
+	<a href="#"><span class="diamond">back to top</span></a>
+	</div>
+	</div>
 
 	<?php include('footer.php');?>
+
+
 	<!----------------------------- SCRIPT ----------------------->
 	<script src="js/main.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
