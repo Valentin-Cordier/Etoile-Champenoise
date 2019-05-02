@@ -23,9 +23,23 @@
 <body>
 	<?php include('header.php');?>
 	<!----------------------- GESTION DE COMPTE ----------------------->
+	<div class="espace"></div>
+	<div class="espace"></div>
+
+	<div class="container-fluid text-center">
+		<div class="row">
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+				<a href="#1"><p class="onglet"> Gestion de compte </p></a>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+			<a href="#2"><p class="onglet"> Gestion des messages </p></a>
+			</div>
+		</div>
+	</div>
+
 	<div class="container-fluid">
 		<div class="row titreG">
-			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" id="1">
 				<h2> INTERFACE DE GESTION DE COMPTES </h2>
 				<h4> Création d'un nouveau compte </h4>
 			</div>
@@ -71,12 +85,13 @@
 	</div>
 	<div class="espace"></div>
 	<!-- Début PAGE parallaxe -->
-	<div class="parallax-window" data-parallax="scroll" data-image-src="images/mbsP.png" alt="Competences"></div>
+	<div class="parallax-window" data-parallax="scroll" data-image-src="images/mbsP.png" alt="Competences">
+	</div>
 	<!-- FIN PAGE parallaxe-->
 	<div class="espace"></div>
 	<div class="container-fluid">
 		<div class="row titreG">
-			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" id="2">
 				<h2> INTERFACE DE GESTION DES MESSAGES </h2>
 				<h4> Nouveau message </h4>
 			</div>

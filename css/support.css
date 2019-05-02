@@ -16,7 +16,7 @@ body{
 }
 
 h2 {
-    padding-top: 5em;
+    padding-top: 3em;
 }
 
 .espace {
@@ -34,6 +34,12 @@ h2 {
 }
 .center-block {
   float:none;
+}
+.onglet {
+    background-color: rgb(2, 56, 113);
+    color: white;
+    height: 4em;
+    line-height: 4em;
 }
 /********************************* PARRALAXE **************************************/
 
