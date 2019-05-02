@@ -35,9 +35,10 @@
         <li class=dropdown2>
           <a href="javascript:void(0)" class="dropbtn2">Infos Pratique</a>
           <div class="dropdown-content2">
-            <a href="#">Réglement</a>
-            <a href="#">Charte réseaux</a>
-            <a href="#">Tarifs</a>
+            <a href="http://ryuzendoji.net/mbs/data/reglement-2017.pdf">Réglement</a>
+            <a href="http://ryuzendoji.net/mbs/data/charte-2017.pdf">Charte réseaux</a>
+            <a href="http://ryuzendoji.net/mbs/data/tarif-t-2018.pdf">Tarifs Traction</a>
+            <a href="http://ryuzendoji.net/mbs/data/tarif-d-2018.pdf"> Tarifs Distibution</a>
             <a href="repertoire.php">Liste du répertoire</a>
           </div>
         </li>
