@@ -11,31 +11,38 @@
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
 
-	<!-- Bootstrap Date-Picker Plugin -->
-	<script type="text/javascript"
-		src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/locales/bootstrap-datepicker.vi.min.js">
-	</script>
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.css" />
-
 </head>
 
 <body>
+
+	<!----------------------- NAVBAR	 ----------------------->
 	<?php include('header.php');?>
-	<!----------------------- GESTION DE COMPTE ----------------------->
+
+	<!----------------------- ONGLET DE NAVIGATION ----------------------->
 	<div class="espace"></div>
 	<div class="espace"></div>
 
 	<div class="container-fluid text-center">
 		<div class="row">
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-				<a href="#1"><p class="onglet"> Gestion de compte </p></a>
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+				<a href="#1">
+					<p class="onglet"> Gestion de compte </p>
+				</a>
 			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
-			<a href="#2"><p class="onglet"> Gestion des messages </p></a>
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+				<a href="#2">
+					<p class="onglet"> Gestion des messages pré-définis </p>
+				</a>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+				<a href="#3">
+					<p class="onglet"> Gestion des messages </p>
+				</a>
 			</div>
 		</div>
 	</div>
+	<!----------------------- GESTION DE COMPTE ----------------------->
+
 
 	<div class="container-fluid">
 		<div class="row titreG">
@@ -73,7 +80,7 @@
 		</div>
 	</div>
 
-	<!----------------------- BOUTON ----------------------->
+	<!----------------------- BOUTON GESTION DE COMPTE ----------------------->
 	<div class="container-fluid text-center">
 		<div class="row">
 			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"> </div>
@@ -84,14 +91,54 @@
 		</div>
 	</div>
 	<div class="espace"></div>
-	<!-- Début PAGE parallaxe -->
-	<div class="parallax-window" data-parallax="scroll" data-image-src="images/mbsP.png" alt="Competences">
-	</div>
-	<!-- FIN PAGE parallaxe-->
-	<div class="espace"></div>
+	<!------------------------- Parallaxe ---------------------->
+	<div class="parallax-window" data-parallax="scroll" data-image-src="images/mbsP.png" alt="Competences"></div>
+
+
+	<!----------------------- GESTION DES MESSAGES PRE-DEFINIS ----------------------->
+
 	<div class="container-fluid">
 		<div class="row titreG">
 			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" id="2">
+				<h2> INTERFACE DE GESTION DES MESSAGES-PREDEFINIS </h2>
+				<h4> Nouveau message </h4>
+			</div>
+		</div>
+	</div>
+	<div class="espace"></div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"> </div>
+			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+				<form>
+					<div class="form-group">
+						<label for="textarea">Votre message : </label>
+						<textarea id="textarea" class="form-control"></textarea>
+					</div>
+				</form>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"></div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid text-center">
+		<div class="row">
+			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"> </div>
+			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+				<button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"></div>
+		</div>
+	</div>
+	<div class="espace"></div>
+
+	<!-------------------------- Début PAGE parallaxe ---------------------->
+	<div class="parallax-window" data-parallax="scroll" data-image-src="images/mbsP.png" alt="Competences"></div>
+
+	<!----------------------- GESTION DES MESSAGES----------------------->
+	<div class="espace"></div>
+	<div class="container-fluid">
+		<div class="row titreG">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" id="3">
 				<h2> INTERFACE DE GESTION DES MESSAGES </h2>
 				<h4> Nouveau message </h4>
 			</div>
