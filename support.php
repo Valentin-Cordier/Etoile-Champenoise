@@ -15,7 +15,6 @@
 
 <body>
 
-	<!----------------------- NAVBAR	 ----------------------->
 	<?php include('header.php');?>
 
 	<!----------------------- ONGLET DE NAVIGATION ----------------------->
@@ -41,6 +40,8 @@
 			</div>
 		</div>
 	</div>
+
+
 	<!----------------------- GESTION DE COMPTE ----------------------->
 
 
@@ -80,7 +81,7 @@
 		</div>
 	</div>
 
-	<!----------------------- BOUTON GESTION DE COMPTE ----------------------->
+	<!--------- BOUTON GESTION DE COMPTE ---------->
 	<div class="container-fluid text-center">
 		<div class="row">
 			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"> </div>
@@ -120,6 +121,7 @@
 			</div>
 		</div>
 	</div>
+	<!--------- BOUTON GESTION DES MESSAGES PRE DEFINIS ---------->
 	<div class="container-fluid text-center">
 		<div class="row">
 			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"> </div>
@@ -174,6 +176,18 @@
 		</div>
 	</div>
 	<div class="espace"></div>
+	<!--------- BOUTON GESTION DES MESSAGES ---------->
+	<div class="container-fluid text-center">
+		<div class="row">
+			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"> </div>
+			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+				<button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
+			</div>
+			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12"></div>
+		</div>
+	</div>
+	<div class="espace"></div>
+
 	<?php include('footer.php');?>
 	<!----------------------------- SCRIPT ----------------------->
 	<script src="js/main.js"></script>
