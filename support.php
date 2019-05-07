@@ -17,7 +17,6 @@
 <body>
 
 	<?php include('header.php');?>
-	<?php include "inc/co.php"?>
 	<!----------------------- ONGLET DE NAVIGATION ----------------------->
 	<div class="espace"></div>
 	<div class="espace"></div>
