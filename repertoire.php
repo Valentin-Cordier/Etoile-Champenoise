@@ -89,7 +89,7 @@
             <div class="col-5 mt-4">
                 <input type="text" id="fax" class="form-control" placeholder="Fax">
             </div>
-            <div class="col-5 mt-4">
+            <div class="col-5 mt-4 mb-5">
                 <input type="text" id="email" class="form-control" placeholder="Email">
             </div>
         </div>
