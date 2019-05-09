@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    
-    <form action="login.php" method="post" class="form-signin ">
+ 
+    <form  method="post" class="form-signin ">
         <div id="logo" class="mb-5 mx-auto text-center">
     <img class="mt-5" src="images/logo.png" width="200px" alt="logo étoile champenoise">
         </div>
@@ -30,4 +30,32 @@
         <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">Se connecter</button>
         <p class="mt-5 mb-3 text-light text-center">&copy; Etoile Champenoise 2019</p>
     </form>
+    <?php 
+    include 'inc/interface/co.php';
+    $req = $dbh->prepare('SELECT * FROM `login` WHERE `login` = :email AND `mdp` = :passsword');
+    if(isset($_POST['submit'])){
+      
+        $req->execute([
+        'email' => $_POST['email'],
+        'passsword' => $_POST['password']
+        ]);
+
+        $user = $req->fetch();
+    
+        if($user){
+            if($user['type']==1){
+            $_SESSION['user'] = $_POST['email'];
+            header('location:index.php');}
+            elseif($user['type']==2){
+                $_SESSION['admin'] = $_POST['email'];
+            header('location:index.php');
+            }
+        }else{
+           echo "<div class='alert alert-light fixed-top col-8 offset-2 mt-5 text-center' role='alert'>
+           identifiants incorrects !
+         </div>";
+       }
+    }
+   
+    ?>   
 <body>
