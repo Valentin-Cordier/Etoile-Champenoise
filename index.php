@@ -1,4 +1,6 @@
-<?php session_start()?>
+<?php session_start();
+include 'inc/interface/verif_co.php';
+?>
 <!DOCTYPE html>
 <html>
 
