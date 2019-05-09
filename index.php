@@ -18,11 +18,9 @@ include 'inc/interface/verif_co.php';
 <body>
   <?php include('header.php');?>
 
-  <div class="container-fluid">
-    <div class="row index">
-      <div id="jumbotron" class="col-12">
-      </div>
-    </div>
+  <div id="jumbotron">
+  <h1 class="w-100 text-center" id="tit">Bienvenue <span><?php if(isset($_SESSION['admin'])){echo $_SESSION['admin'];}else{echo$_SESSION['user'];}; ?></span> !</h1>
+    <img src='images/mbsP.png' width="100%">
   </div>
 
   <?php include('footer.php');?>
