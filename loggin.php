@@ -46,7 +46,7 @@
             if($user['type']==1){
             $_SESSION['user'] = $_POST['email'];
             header('location:index.php');}
-            else{
+            elseif($user['type']==2){
                 $_SESSION['admin'] = $_POST['email'];
             header('location:index.php');
             }

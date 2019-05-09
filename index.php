@@ -20,7 +20,7 @@ include 'inc/interface/verif_co.php';
 
   <div class="container-fluid">
     <div class="row index">
-      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+      <div id="jumbotron" class="col-12">
       </div>
     </div>
   </div>

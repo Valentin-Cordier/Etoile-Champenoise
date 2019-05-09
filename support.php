@@ -1,5 +1,5 @@
 <?php session_start();
-if(!isset($_POST['admin'])){
+if(!isset($_SESSION['admin'])){
 	header('location:loggin.php');}?>
 <!DOCTYPE html>
 <html>
