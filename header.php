@@ -44,7 +44,7 @@
             <a href="repertoire.php">Liste du répertoire</a>
           </div>
         </li>
-        <li><a href="inc/interface/log_out.php"><i class="fas fa-sign-in-alt"></i></a></li>
+        <li><a href="in/interface/log_out.php"><i class="fas fa-sign-in-alt"></i></a></li>
         <!--<li><a><i class="fas fa-sign-out-alt"></i></a></li>-->
 
       </ul>
