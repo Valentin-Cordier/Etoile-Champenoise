@@ -1,4 +1,6 @@
-<?php session_start()?>
+<?php session_start();
+if(!isset($_SESSION['admin'])){
+	header('location:loggin.php');}?>
 <!DOCTYPE html>
 <html>
 
@@ -89,30 +91,48 @@
 									<th class="table-danger">Nom du compte</th>
 									<th>Type de compte</th>
 									<th>Compte bloqué</th>
-									<th>Un truc</th>
-									<th>Deux trucs</th>
+									<th>Modification</th>
+									<th>Suppression</th>
 								</tr>
 							</thead>
 							<tbody>
+							<?php 
+    							include 'inc/interface/co.php';
+								$req = $dbh->query('SELECT * FROM `login`');
+								while ($donnees = $req->fetch()){
+							?>
 								<tr>
-									<td>Administrateur</td>
-									<td></td>
-										<td></td>
-										<td></td>
-										<td></td>
-								</tr>
-								<tr>
-									<td>Admin</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>DefUser</td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>Test3</td>
-									<td></td>
-								</tr>
+									<td><?php echo $donnees['login']; ?></td>
+
+									<td><?php if ($donnees['type']==2){echo 'Admin';}
+									else {echo 'User';} ?></td>
+
+									<td><?php if ($donnees['islocked']==0){echo 'Non';} 
+									else {echo 'Oui';} ?></td>
+
+									<div class="suppline2">
+									
+									<td>
+									<input type="hidden" name="token" value="moduse">
+									<input type="hidden" name="IDm" value="<?php echo $donnees['IDlogin']; ?>">
+									<input type="submit" class="suppbtn" value="MODIFIER">
+									</td>
+
+									</div>
+
+
+									<td><?php if ($donnees['login']==Administrateur){echo 'Non supprimable';} 
+									else {echo '<form method="POST" action="#">
+										<input type="hidden" name="token" value="supuse">
+										<input type="hidden" name="ID" value="'.$var0.'">
+										<input type="submit" class="suppbtn" value="SUPPRIMER">
+										</form>';} ?></td>
+									</tr>
+
+
+								<?php }
+        							$req->closeCursor(); // Termine le traitement de la requête
+       							 ?>
 							</tbody>
 						</table>
 					</div>
@@ -231,11 +251,13 @@
 		<?php include('footer.php');?>
 
 
-		<!----------------------------- SCRIPT ----------------------->
-		<script src="js/main.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-		<script src="java/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
+									<!----------------------------- SCRIPT ----------------------->
+									<script src="js/main.js"></script>
+									<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+									</script>
+									<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+									<script src="java/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8">
+									</script>
 
 </body>
 
