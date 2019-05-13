@@ -55,27 +55,37 @@ if(!isset($_SESSION['admin'])){
 				<h4> Création d'un nouveau compte </h4>
 				<center>
 					<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 titreG" id="1">
-						<form>
+						<form method="post">
 							<div class="form-group">
 								<label for="texte">Nom de compte : </label>
-								<input id="texte" type="text" class="form-control">
+								<input id="texte" name="login" type="text" class="form-control" required>
 							</div>
 							<div class="form-group">
 								<label for="texte">Mot de passe: </label>
-								<input id="texte" class="form-control">
+								<input id="texte" name="mdp" class="form-control" required>
 							</div>
 							<div class="form-group">
 								<label for="select">Type de compte : </label>
-								<select id="select" class="form-control">
-									<option>Utilisateur</option>
-									<option>Administrateur</option>
+								<select id="select" name="type" class="form-control" required>
+									<option value="1">Utilisateur</option>
+									<option value="2">Administrateur</option>
 								</select>
 							</div>
+							<button type="submit" name="submit" class="btn btn-primary btn-lg">Envoyer</button>
 						</form>
-						<button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
+						
 					</div>
 				</center>
 			</div>
+			<?php
+			include 'inc/interface/co.php';
+			if(isset($_POST['submit'])){
+				$log= $_POST['login'];
+				$mdp = $_POST['mdp'];
+				$type =$_POST['type'];
+				$dbh->query("INSERT INTO login (`login`, `mdp`, `islocked`, `type`) VALUES ('$log', '$mdp','0', '$type')"); 
+			}
+			?>
 
 			<!------------------------- TABLEAU DE DROITE---------------------->
 
@@ -97,7 +107,7 @@ if(!isset($_SESSION['admin'])){
 							</thead>
 							<tbody>
 							<?php 
-    							include 'inc/interface/co.php';
+    							
 								$req = $dbh->query('SELECT * FROM `login`');
 								while ($donnees = $req->fetch()){
 							?>
@@ -113,20 +123,16 @@ if(!isset($_SESSION['admin'])){
 									<div class="suppline2">
 									
 									<td>
-									<input type="hidden" name="token" value="moduse">
-									<input type="hidden" name="IDm" value="<?php echo $donnees['IDlogin']; ?>">
-									<input type="submit" class="suppbtn" value="MODIFIER">
+									<a href="inc/interface/modif_user.php?id=<?=$donnees['IDlogin']?>" class="btn btn-warning">MODIFIER</a>
 									</td>
 
 									</div>
 
 
 									<td><?php if ($donnees['login']==Administrateur){echo 'Non supprimable';} 
-									else {echo '<form method="POST" action="#">
-										<input type="hidden" name="token" value="supuse">
-										<input type="hidden" name="ID" value="'.$var0.'">
-										<input type="submit" class="suppbtn" value="SUPPRIMER">
-										</form>';} ?></td>
+									else {echo '
+										<a href="inc/interface/delete_user.php?id='.$donnees['IDlogin'].'" class="btn btn-danger">SUPPRIMER</a>
+										';} ?></td>
 									</tr>
 
 
