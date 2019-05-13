@@ -1,4 +1,7 @@
-<!DOCTYPE <!DOCTYPE html>
+<?php session_start();
+include 'inc/interface/verif_co.php';
+?>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -15,11 +18,9 @@
 <body>
   <?php include('header.php');?>
 
-  <div class="container-fluid">
-    <div class="row index">
-      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-      </div>
-    </div>
+  <div id="jumbotron">
+  <h1 class="w-100 text-center" id="tit">Bienvenue <span><?php if(isset($_SESSION['admin'])){echo $_SESSION['admin'];}else{echo$_SESSION['user'];}; ?></span> !</h1>
+    <img src='images/mbsP.png' width="100%">
   </div>
 
   <?php include('footer.php');?>
