@@ -22,9 +22,9 @@
       <!--Icone de connexion et de déconnexion-->
       <ul>
         <li><a href="index.php">Accueil</a></li>
+        <li><a href="espace.php">Espace Suivi</a></li>
         <li><a href="carte.php">Carte Interactive</a></li>
         <li><a href="repertoire.php">Répertoire</a></li>
-        <li><a href="espace.php">Espace Suivi</a></li>
         <?php if(isset($_SESSION['admin'])){
         echo'<li class=dropdown>
           <a href="support.php" class="dropbtn">Support Administrateur</a>
@@ -35,7 +35,7 @@
           </div>
         </li>';} ?>
         <li class=dropdown2>
-          <a href="javascript:void(0)" class="dropbtn2">Infos Pratique</a>
+          <a href="javascript:void(0)" class="dropbtn2">Documents</a>
           <div class="dropdown-content2">
             <a href="reglement.php">Réglement</a>
             <a href="charte.php">Charte réseaux</a>

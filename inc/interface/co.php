@@ -2,9 +2,9 @@
 
 
 $host_name = 'localhost';
-$database = 'db752756822';
-$user_name = 'Jules';
-$password = 'fefe8cb08';
+$database = 'mbs';
+$user_name = 'root';
+$password = '';
 
 $dbh = null;
 try {
