@@ -123,7 +123,7 @@ if(!isset($_SESSION['admin'])){
 									<div class="suppline2">
 									
 									<td>
-									<a href="inc/interface/modif_user.php?id=<?=$donnees['IDlogin']?>" class="btn btn-warning">MODIFIER</a>
+									<a href="modif_user.php?id=<?=$donnees['IDlogin']?>" class="btn btn-warning">MODIFIER</a>
 									</td>
 
 									</div>
