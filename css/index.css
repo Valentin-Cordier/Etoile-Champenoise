@@ -18,20 +18,8 @@ body{
     text-align : center;
     color: white;
 }
-#jumbotron{
-    margin-top:5%;
-   
-}
+
 #tit{
-    
-<<<<<<< HEAD
-    margin-top:4%;
-=======
-    margin-top:5%;
->>>>>>> test
-    color:whitesmoke;
-    background-color:transparent;
-    font-size: 4em;
-    position: absolute;
+    position:absolute;
     
 }

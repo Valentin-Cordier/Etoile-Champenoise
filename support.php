@@ -18,12 +18,7 @@ if(!isset($_SESSION['admin'])){
 
 <body>
 
-<<<<<<< HEAD
 	<?php include('header.php');?>
-=======
-	<?php include('header.php');
-	?>
->>>>>>> test
 	<!----------------------- ONGLET DE NAVIGATION ----------------------->
 	<div class="espace"></div>
 	<div class="espace"></div>
@@ -60,7 +55,6 @@ if(!isset($_SESSION['admin'])){
 				<h4> Création d'un nouveau compte </h4>
 				<center>
 					<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 titreG" id="1">
-<<<<<<< HEAD
 						<form method="post">
 							<div class="form-group">
 								<label for="texte">Nom de compte : </label>
@@ -92,41 +86,6 @@ if(!isset($_SESSION['admin'])){
 				$dbh->query("INSERT INTO login (`login`, `mdp`, `islocked`, `type`) VALUES ('$log', '$mdp','0', '$type')"); 
 			}
 			?>
-=======
-						<form action="support.php" method="post">
-							<div class="form-group">
-								<label for="texte">Nom de compte : </label>
-								<input id="texte" type="text" class="form-control" name="cptname" required>
-							</div>
-							<div class="form-group">
-								<label for="texte">Mot de passe: </label>
-								<input id="texte" class="form-control" type="password" name="cptpass" required>
-							</div>
-							<div class="form-group">
-								<label for="select">Type de compte : </label>
-								<select name="cpttype" id="select" class="form-control">
-									<option value="1" selected="selected">Utilisateur</option>
-									<option value="2">Administrateur</option>
-								</select>
-							</div>
-						
-						<button type="submit" name="submit" class="btn btn-primary btn-lg">Créer</button>
-						</form>
-						<?php
-						if (isset($_POST['submit'])){
-							$login = $_POST['cptname'];
-							$mdp = $_POST['cptpass'];
-							$type = $_POST['cpttype'];
-							
-						
-							 $dbh->query('INSERT INTO login (login, mdp, islocked, type)
-							VALUES ( '.$login.', '.$mdp.', 0, '.$type.')');}
-							
-						?>
-					</div>
-				</center>
-			</div>
->>>>>>> test
 
 			<!------------------------- TABLEAU DE DROITE---------------------->
 
@@ -148,11 +107,7 @@ if(!isset($_SESSION['admin'])){
 							</thead>
 							<tbody>
 							<?php 
-<<<<<<< HEAD
-    							
-=======
     							include 'inc/interface/co.php';
->>>>>>> test
 								$req = $dbh->query('SELECT * FROM `login`');
 								while ($donnees = $req->fetch()){
 							?>
@@ -168,30 +123,16 @@ if(!isset($_SESSION['admin'])){
 									<div class="suppline2">
 									
 									<td>
-<<<<<<< HEAD
 									<a href="modif_user.php?id=<?=$donnees['IDlogin']?>" class="btn btn-warning">MODIFIER</a>
-=======
-									<input type="hidden" name="submit" value="moduse">
-									<input type="hidden" name="IDm" value="<?php echo $donnees['IDlogin']; ?>">
-									<input type="submit" class="suppbtn" value="MODIFIER">
->>>>>>> test
 									</td>
 
 									</div>
 
 
 									<td><?php if ($donnees['login']==Administrateur){echo 'Non supprimable';} 
-<<<<<<< HEAD
 									else {echo '
 										<a href="inc/interface/delete_user.php?id='.$donnees['IDlogin'].'" class="btn btn-danger">SUPPRIMER</a>
 										';} ?></td>
-=======
-									else {echo '<form method="POST" action="#">
-										<input type="hidden" name="submit" value="supuse">
-										<input type="hidden" name="ID" value="'.$var0.'">
-										<input type="submit" class="suppbtn" value="SUPPRIMER">
-										</form>';} ?></td>
->>>>>>> test
 									</tr>
 
 

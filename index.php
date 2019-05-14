@@ -18,8 +18,8 @@ include 'inc/interface/verif_co.php';
 <body>
   <?php include('header.php');?>
 
-  <div id="jumbotron">
-  <h1 class="w-100 text-center" id="tit">Bienvenue <span><?php if(isset($_SESSION['admin'])){echo $_SESSION['admin'];}else{echo$_SESSION['user'];}; ?></span> !</h1>
+  <div id="jumbotron" class="mt-5">
+  <h1 class="w-100 text-center mt-5 text-light" id="tit">Bienvenue <span><?php if(isset($_SESSION['admin'])){echo $_SESSION['admin'];}else{echo$_SESSION['user'];}; ?></span> !</h1>
     <img src='images/mbsP.png' width="100%">
   </div>
 

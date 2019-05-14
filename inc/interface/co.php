@@ -2,19 +2,10 @@
 
 
 $host_name = 'localhost';
-$database = 'mbs';
-<<<<<<< HEAD
+$database="mbs";
 $user_name = 'Jules';
 $password = 'fefe8cb08';
-=======
-<<<<<<< HEAD
-$user_name = 'root';
-$password = '';
-=======
-$user_name = 'martin';
-$password = 'DFG34cvb78';
->>>>>>> test
->>>>>>> eed0ff14b5e665337b3842088445eb3df74971a0
+
 
 $dbh = null;
 try {
