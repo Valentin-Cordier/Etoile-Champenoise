@@ -50,7 +50,7 @@ include 'inc/interface/verif_co.php'?>
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php 
+                                 <?php 
     							include 'inc/interface/co.php';
 								$req = $dbh->query('SELECT * FROM `traction`');
 								while ($donnees = $req->fetch()){
