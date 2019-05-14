@@ -22,42 +22,20 @@
       <!--Icone de connexion et de déconnexion-->
       <ul>
         <li><a href="index.php">Accueil</a></li>
-<<<<<<< HEAD
         <li><a href="espace.php">Espace Suivi</a></li>
-        <li><a href="carte.php">Carte Interactive</a></li>
-        <li><a href="repertoire.php">Répertoire</a></li>
-=======
-        <li><a href="carte.php">Carte Interactive</a></li>
-        <li><a href="repertoire.php">Répertoire</a></li>
-        <li><a href="espace.php">Espace Suivi</a></li>
->>>>>>> test
-        <?php if(isset($_SESSION['admin'])){
-        echo'<li class=dropdown>
-          <a href="support.php" class="dropbtn">Support Administrateur</a>
-          <div class="dropdown-content">
-            <a href="support.php">Gestion de comptes</a>
-            <a href="support.php">Message pré-définis</a>
-            <a href="support.php">Message important</a>
-          </div>
-        </li>';} ?>
         <li class=dropdown2>
-<<<<<<< HEAD
           <a href="javascript:void(0)" class="dropbtn2">Documents</a>
           <div class="dropdown-content2">
             <a href="reglement.php">Réglement</a>
             <a href="charte.php">Charte réseaux</a>
             <a href="tarif-t.php">Tarifs Traction</a>
-=======
-          <a href="javascript:void(0)" class="dropbtn2">Infos Pratique</a>
-          <div class="dropdown-content2">
-            <a href="reglement.php">Réglement</a>
-            <a href="charte.php">Charte réseaux</a>
-            <a href="tarifT.php">Tarifs Traction</a>
->>>>>>> test
             <a href="tarif-d.php"> Tarifs Distibution</a>
-            <a href="repertoire.php">Liste du répertoire</a>
           </div>
-        </li>
+        <li><a href="repertoire.php">Répertoire</a></li>
+        <li><a href="carte.php">Carte Interactive</a></li>
+        <?php if(isset($_SESSION['admin'])){
+        echo'
+          <li><a href="support.php" class="dropbtn">Support Administrateur</a></li>';} ?>
         <li><a href="inc/interface/log_out.php"><i class="fas fa-sign-in-alt"></i></a></li>
         <!--<li><a><i class="fas fa-sign-out-alt"></i></a></li>-->
 
