@@ -54,7 +54,10 @@ nav ul li, .dropbtn .dropbtn2 {
 /*changement de couleur de fond au passage de la souris sur les liens*/
 nav ul li:hover, .dropdown:hover .dropbtn .dropdown2:hover .dropbtn2 {
   background-color: #E5BB16 !important;
+<<<<<<< HEAD
   
+=======
+>>>>>>> test
 }
 
 li.dropdown {
@@ -90,7 +93,11 @@ li.dropdown2 {
 }
 
 .dropdown-content a {
+<<<<<<< HEAD
   
+=======
+  color: black;
+>>>>>>> test
   padding: 0.85em 1em;
   text-decoration: none;
   display: block;
@@ -99,7 +106,11 @@ li.dropdown2 {
 }
 
 .dropdown-content2 a {
+<<<<<<< HEAD
   
+=======
+  color: black;
+>>>>>>> test
   padding: 0.85em 1em;
   text-decoration: none;
   display: block;
@@ -125,7 +136,11 @@ li.dropdown2 {
 
 nav ul li a {
   text-decoration: none !important;
+<<<<<<< HEAD
   color: white ;
+=======
+  color: white !important;
+>>>>>>> test
   opacity: 1;
   padding: 0em 1em 0em 1em;
 }
