@@ -97,3 +97,13 @@ a {
       border: 15px solid transparent;
       border-bottom-color: #806868;
   }
+<<<<<<< HEAD
+=======
+
+  .annee {
+      font-size: 2.2em;
+      font-weight: 700;
+      background-color: rgb(255, 255, 0);
+      border: 1px solid black;
+  }
+>>>>>>> test

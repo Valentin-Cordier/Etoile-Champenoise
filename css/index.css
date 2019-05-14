@@ -24,7 +24,11 @@ body{
 }
 #tit{
     
+<<<<<<< HEAD
     margin-top:4%;
+=======
+    margin-top:5%;
+>>>>>>> test
     color:whitesmoke;
     background-color:transparent;
     font-size: 4em;
