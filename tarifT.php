@@ -45,7 +45,7 @@ include 'inc/interface/verif_co.php'?>
                                     <th class="table-danger">Département</th>
                                     <th>Destination</th>
                                     <th>Kilomètres</th>
-                                    <th>Prix traction à la tonne</th>
+                                    <th>Prix traction à la toanne</th>
                                     <th>Prix traction à la palette</th>
                                 </tr>
                             </thead>
