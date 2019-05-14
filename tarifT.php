@@ -46,7 +46,7 @@ include 'inc/interface/verif_co.php'?>
                                     <th>Destination</th>
                                     <th>Kilomètres</th>
                                     <th>Prix traction à la toanne</th>
-                                    <th>Prix tractiona à la palette</th>
+                                    <th>Prix traction à la palette</th>
                                 </tr>
                             </thead>
                             <tbody>
