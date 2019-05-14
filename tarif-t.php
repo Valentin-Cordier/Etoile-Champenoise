@@ -19,9 +19,72 @@
     <div class="espace"></div>
     <div class="espace"></div>
     <div class="espace"></div>
-    <iframe class="pdf" src="pdf/tarif-t-2018.pdf" height="1200px" width="1600px"></iframe>
-    <div class="espace"></div>
-    <div class="espace"></div>
+
+    <div class="container-fluid">
+        <div class="row titreG">
+
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12" id="1"></div>
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" id="1">
+        <img class="logo" src="images/logo.png">
+        </div>
+     
+        </div>
+
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" id="1">
+                <h2> Tarif traction HT applicable au 01/02/2018 </h2>
+                <div class="espace"></div>
+                <center>
+                    <div class="col-xl-11 col-lg-11 col-md-11 col-sm-12 col-12">
+
+                        <table class="table mb-3 table-sm">
+                            <thead class="table-info">
+                                <tr>
+                                    <th class="table-danger">Département</th>
+                                    <th>Destination</th>
+                                    <th>Kilomètres</th>
+                                    <th>Prix traction à la tonne</th>
+                                    <th>Prix traction à la palette</th>
+                                    <th>Modifier<th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php 
+    							include 'inc/interface/co.php';
+								$req = $dbh->query('SELECT * FROM `traction`');
+								while ($donnees = $req->fetch()){
+							?>
+                           
+                                <tr >
+                                    <td><?php echo $donnees['DPT']; ?></td>
+
+                                    <td><?php echo $donnees['DESTINATION']; ?></td>
+
+                                    <td><?php echo $donnees['KMS']; ?></td>
+
+                                    <td><?php echo $donnees['TONNE']; ?></td>
+
+
+                                    <td><?php echo $donnees['PALETTE']; ?></td>
+                                    <td><a class="btn btn-warning" href="modif_prix.php?id=<?=$donnees['id_traction']?>">Modifier</a></td>
+                                </tr>
+
+
+                                <?php }
+        							$req->closeCursor(); // Termine le traitement de la requête
+       							 ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </Center>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
     <?php include('footer.php');?>
 
     </body>
