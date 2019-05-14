@@ -19,7 +19,7 @@
     <div class="espace"></div>
     <div class="espace"></div>
     <div class="espace"></div>
-    <iframe class="pdf" src="pdf/tarif-d-2018.pdf" height="1200px" width="1600px"></iframe>
+    <iframe class="pdf" src="pdf/tarif-d-2018.pdf" height="1200px" width="100%"></iframe>
     <div class="espace"></div>
     <div class="espace"></div>
     <?php include('footer.php');?>
