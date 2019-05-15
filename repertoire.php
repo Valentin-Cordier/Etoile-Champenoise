@@ -56,6 +56,10 @@ include 'inc/interface/verif_co.php';?>
             <input class="btn btn-primary btn-lg mb-5" type="submit" value="Recherche">
 
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
           <div class="resframe2">
 
 
