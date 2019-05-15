@@ -33,6 +33,36 @@ $id = $_POST['name'];
         if ($var8 == '') {
             $var8 = "Non renseigné";
         }
+        echo'<form>
+              <div class="row justify-content-center">
+                  <div class="col-5">
+                       <p><span class="mid1 col-6">'.$var1.'</span></p>
+                  </div>';
+                  echo'<div class="col-5">
+                       <p><span class="mid1 col-6">'.$var2.'</span></p>
+                  </div>
+              </div>';
+              echo'<div class="row justify-content-center">
+                  <div class="col-5 mt-4">
+                      <p><span class="mid1 col-6">'.$var3.'</span></p>
+                  </div>';
+                  echo'<div class="col-5 mt-4">
+                       <p><span class="mid1 col-6">'.$var4.'</span></p>
+                  </div>';
+                  echo'<div class="col-5 mt-4">
+                      <p><span class="mid1 col-6">'.$var5.'</span></p>
+                  </div>';
+                  echo'<div class="col-5 mt-4">
+                    <p><span class="mid1 col-6">'.$var6.'</span></p>
+                  </div>';
+                  echo'<div class="col-5 mt-4">
+                      <p><span class="mid1 col-6">'.$var7.'</span></p>
+                  </div>';
+                  echo'<div class="col-5 mt-4 mb-5">
+                       <p><span class="mid1 col-6">'.$var8.'</span></p>
+                  </div>
+              </div>
+          </form>';
 
 
     }

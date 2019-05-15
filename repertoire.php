@@ -62,36 +62,6 @@ include 'inc/interface/verif_co.php';?>
 
     </div>
     <?php require_once 'inc/interface/repertoire.php';?>
-    <form>
-          <div class="row justify-content-center">
-              <div class="col-5">
-                   <p><span><?php echo''.$var1.'';?></span></p>
-              </div>
-              <div class="col-5">
-                  <p><span><?php echo''.$var2.'';?></span></p>
-              </div>
-          </div>
-          <div class="row justify-content-center">
-              <div class="col-5 mt-4">
-                  <p><span><?php echo''.$var3.'';?></span></p>
-              </div>
-              <div class="col-5 mt-4">
-                  <p><span><?php echo''.$var4.'';?></span></p>
-              </div>
-              <div class="col-5 mt-4">
-                  <p><span><?php echo''.$var5.'';?></span></p>
-              </div>
-              <div class="col-5 mt-4">
-                  <p><span><?php echo''.$var6.'';?></span></p>
-              </div>
-              <div class="col-5 mt-4">
-                  <p><span><?php echo''.$var7.'';?></span></p>
-              </div>
-              <div class="col-5 mt-4 mb-5">
-                  <p><span><?php echo''.$var8.'';?></span></p>
-              </div>
-          </div>
-      </form>
         </div>
       </div>
     </div>
