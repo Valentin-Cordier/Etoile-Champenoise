@@ -16,7 +16,7 @@ include 'inc/interface/verif_co.php'?>
 
 <body>
   <?php include('header.php');?>
-  <iframe src="https://www.google.com/maps/d/embed?mid=1SpUR5zKVZOg_e05Vby84nOh-zznsX4kN" style="margin-top:5em" width="100%" height="750px"></iframe>
+  <iframe src="https://www.google.com/maps/d/embed?mid=1SpUR5zKVZOg_e05Vby84nOh-zznsX4kN" width="100%" height="750px"></iframe>
 
   <?php include('footer.php');?>
 </body>

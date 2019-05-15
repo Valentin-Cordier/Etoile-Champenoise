@@ -17,7 +17,7 @@ include 'inc/interface/verif_co.php';?>
   <?php include('header.php');?>
   <?php require_once 'inc/interface/co.php';?>
 
-  <img src="images/mbsP.png" class="img-fluid" style="height: 50vh; width:100%; object-fit:cover;"
+  <img src="images/mbsP.png" class="img-fluid" style="margin-top: 3em; height: 50vh; width:100%; object-fit:cover;"
     alt="Responsive image de livraison">
   <div class="container-fluid col-12 text-center mt-3">
     <hr class="col-6" style="background-color: #0477BF; margin-top: 6em; ">
