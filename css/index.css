@@ -18,14 +18,76 @@ body{
     text-align : center;
     color: white;
 }
-
+#jumbotron{
+    margin-top:5%;
+   
+}
 #tit{
-    position:absolute;
+    color:whitesmoke;
+    background-color:transparent;
+    font-size: 4em;
+    position: absolute;
     
 }
 
-.carousel-cell {
-    width: 100%; /* full width */
-    height: 160px; /* height of carousel */
-    margin-right: 10px;
-  }
+.espace {
+    height: 5em;
+}
+
+.espace1 {
+    height: 3em;
+}
+
+.espace2 {
+    height: 2em;
+}
+
+.entrepot {
+    height: 450px;
+    width: auto;
+}
+
+.icone {
+    height: 20px;
+    width: auto;
+}
+
+.flux {
+    height: 20em;
+    background: rgb(221, 220, 220);
+    border: 4px solid rgba(0, 0, 0, 0.664);
+}
+
+#P1 {
+    background-color: rgb(31, 39, 92);
+    color: white;
+    border-radius : 20%;
+    height: 250px;
+}
+
+#P2 {
+    background-color: rgba(0, 0, 0, 0.781);
+    color: white;
+    border-radius : 30%;
+    height: 250px;
+}
+
+.connect {
+    background-color:rgb(31, 39, 92);
+    height: 5em;
+}
+
+/********************************* PARRALAXE **************************************/
+
+
+.parallax-window {
+    height: 500px;
+    background: transparent;
+}
+
+@media (max-width:900px) {
+.carte {
+    height: auto;
+    width: 100%;
+}
+}

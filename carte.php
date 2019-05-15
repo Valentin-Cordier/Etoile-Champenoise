@@ -17,11 +17,10 @@ include 'inc/interface/verif_co.php'?>
 <body>
   <?php include('header.php');?>
   <iframe src="https://www.google.com/maps/d/embed?mid=1SpUR5zKVZOg_e05Vby84nOh-zznsX4kN" width="100%" height="750px"></iframe>
-
   <?php include('footer.php');?>
-</body>
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
   integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
 
 </html>

@@ -1,17 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Index</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="css/footer.css">
+    <title>Etoile Champenoise 2019</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
-<footer class="sticky-bottom pt-5 pb-5" style="background-color:#023871" >
-<h4 class="text-center" style="color:#E5BB16" >&copy Etoile Champenoise 2019</h5>
-</footer>
+
+
+    <footer class="sticky-bottom pt-5 pb-4" style="background-color:#023871">
+        <div class="container-fluid">
+            <div class="pt d-flex justify-content-center">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <ul style="color:white; list-style: none;">
+                            <h4 style="color:white;">Adresse</h4>
+                            <li>Rue des Crayères</li>
+                            <li>Parc Industriel de Référence</li>
+                            <li>51520 RECY</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <ul style="color:white; list-style: none;">
+                            <h4 style="color:white;">Contactez-Nous</h4>
+                            <li> <i class="fas fa-phone" style="color: #E5BB16;"></i> +33 (0)3 26 21 56 21</li>
+                            <li> <i class="fas fa-fax" style="color: #E5BB16;"></i> +33 (0)3 26 21 56 92</li>
+                            <li> <i class="fas fa-mobile" style="color: #E5BB16;"></i> +33 (0)6 32 54 47 34</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                        <ul style="color:white; list-style: none;">
+                            <h4 style="color:white;">Email</h4>
+                            <li><strong>Email-Exploitation :</strong> transit@etoileschampenoise.fr</li>
+                            <li><strong>Email-Direction :</strong> franck.ame@etoilechampenoise.fr</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row>">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <hr style="background-color:white;">
+                    <h4 class="text-center" style="color:#E5BB16">&copy Etoile Champenoise 2019</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
-<html>
+
+</html>
