@@ -66,6 +66,8 @@ include 'inc/interface/verif_co.php';?>
 
     </div>
     <?php require_once 'inc/interface/repertoire.php';?>
+    <p class="txtmed" >Téléchargez la liste complète <a href="data/repertoire-2018.xlsx" class="y txtmed">ICI</a> ! </p>
+</div>
         </div>
       </div>
     </div>
