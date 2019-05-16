@@ -66,9 +66,6 @@ $id = $_POST['name'];
 
 
     }
-    echo '</div>
-
-                    <p class="txtmed" >Téléchargez la liste complète <a href="data/repertoire-2018.xlsx" class="y txtmed">ICI</a> ! </p>
-                </div>';
+    echo '</div>';
 }
 ?>
