@@ -13,6 +13,7 @@ if(!isset($_SESSION['admin'])){
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
 		integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
 </head>
 
@@ -48,10 +49,11 @@ if(!isset($_SESSION['admin'])){
 
 
 	<div class="container-fluid">
+		<h2> INTERFACE DE GESTION DE COMPTES </h2>
 		<div class="row titreG">
 			<!----------------------- COLONNE DE GAUCHE ----------------------->
-			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" id="1">
-				<h2> INTERFACE DE GESTION DE COMPTES </h2>
+			<div class="mt- col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" id="1">
+
 				<h4> Création d'un nouveau compte </h4>
 				<center>
 					<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 titreG" id="1">
@@ -73,7 +75,7 @@ if(!isset($_SESSION['admin'])){
 							</div>
 							<button type="submit" name="submit" class="btn btn-primary btn-lg">Envoyer</button>
 						</form>
-						
+
 					</div>
 				</center>
 			</div>
@@ -89,60 +91,61 @@ if(!isset($_SESSION['admin'])){
 
 			<!------------------------- TABLEAU DE DROITE---------------------->
 
-			<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12" id="1">
-				<h2> Comptes actifs </h2>
-				<div class="espace"></div>
-				<center>
-					<div class="col-xl-11 col-lg-11 col-md-11 col-sm-12 col-12">
+			<div class="mt-3 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12" id="1">
+				<h3> Comptes actifs </h2>
 
-						<table class="table table-sm">
-							<thead class="table-info">
-								<tr>
-									<th class="table-danger">Nom du compte</th>
-									<th>Type de compte</th>
-									<th>Compte bloqué</th>
-									<th>Modification</th>
-									<th>Suppression</th>
-								</tr>
-							</thead>
-							<tbody>
-							<?php 
+					<center>
+						<div class="col-xl-11 col-lg-11 col-md-11 col-sm-12 col-12">
+
+							<table class="table table-sm">
+								<thead class="table-info">
+									<tr>
+										<th class="table-danger">Nom du compte</th>
+										<th>Type de compte</th>
+										<th>Compte bloqué</th>
+										<th>Modification</th>
+										<th>Suppression</th>
+									</tr>
+								</thead>
+								<tbody>
+									<?php 
     							include 'inc/interface/co.php';
 								$req = $dbh->query('SELECT * FROM `login`');
 								while ($donnees = $req->fetch()){
 							?>
-								<tr>
-									<td><?php echo $donnees['login']; ?></td>
+									<tr>
+										<td><?php echo $donnees['login']; ?></td>
 
-									<td><?php if ($donnees['type']==2){echo 'Admin';}
+										<td><?php if ($donnees['type']==2){echo 'Admin';}
 									else {echo 'User';} ?></td>
 
-									<td><?php if ($donnees['islocked']==0){echo 'Non';} 
+										<td><?php if ($donnees['islocked']==0){echo 'Non';} 
 									else {echo 'Oui';} ?></td>
 
-									<div class="suppline2">
-									
-									<td>
-									<a href="modif_user.php?id=<?=$donnees['IDlogin']?>" class="btn btn-warning">MODIFIER</a>
-									</td>
+										<div class="suppline2">
 
-									</div>
+											<td>
+												<a href="modif_user.php?id=<?=$donnees['IDlogin']?>"
+													class="btn btn-warning">MODIFIER</a>
+											</td>
+
+										</div>
 
 
-									<td><?php if ($donnees['login']==Administrateur){echo 'Non supprimable';} 
+										<td><?php if ($donnees['login']==Administrateur){echo 'Non supprimable';} 
 									else {echo '
 										<a href="inc/interface/delete_user.php?id='.$donnees['IDlogin'].'" class="btn btn-danger">SUPPRIMER</a>
 										';} ?></td>
 									</tr>
 
 
-								<?php }
+									<?php }
         							$req->closeCursor(); // Termine le traitement de la requête
        							 ?>
-							</tbody>
-						</table>
-					</div>
-				</Center>
+								</tbody>
+							</table>
+						</div>
+					</Center>
 			</div>
 		</div> <!-- FERMETURE DU ROW ligne 49 -->
 	</div> <!-- FERMETURE DU CONTAINER ligne 48 -->
@@ -159,7 +162,6 @@ if(!isset($_SESSION['admin'])){
 		<div class="row titreG">
 			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" id="2">
 				<h2> INTERFACE DE GESTION DES MESSAGES-PREDEFINIS </h2>
-				<h4> Nouveau message </h4>
 			</div>
 		</div>
 	</div>
@@ -168,102 +170,79 @@ if(!isset($_SESSION['admin'])){
 		<div class="row">
 			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"> </div>
 			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-				<form>
+				<?php
+					$result="";
+					$requ="";
+					$requ=$dbh->query('SELECT * FROM message');
+					$result=$requ->fetch();
+					$requ->closeCursor();
+				?>
+				<form method="post">
 					<div class="form-group">
-						<label for="textarea">Votre message : </label>
-						<textarea id="textarea" class="form-control"></textarea>
+						<label for="textarea">Modifier le message d'acceuil : </label>
+						<textarea id="textarea" name="cont" class="form-control"><?=$result['contenu']?></textarea>
 					</div>
+					<button type="submit" name="submit1" class="btn btn-primary btn-lg">Modifier</button>
 				</form>
+				<?php
+				$cont=$_POST['cont'];
+				if(isset($_POST['submit1'])){
+					
+					$dbh->query("UPDATE message SET contenu='$cont' WHERE id_message=1");
+					header('support.php');
+					}
+				?>
 				<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"></div>
 			</div>
+
 		</div>
+
 	</div>
-	<!--------- BOUTON GESTION DES MESSAGES PRE DEFINIS ---------->
-	<div class="container-fluid text-center">
+	<div class="container-fluid mt-5">
 		<div class="row">
 			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"> </div>
 			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-				<button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
-			</div>
-			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"></div>
-		</div>
-	</div>
-	<div class="espace"></div>
-	<div class="espace"></div>
-
-	<!-------------------------- Début PAGE parallaxe ---------------------->
-	<div class="parallax-window" data-parallax="scroll" data-image-src="images/mbsP.png" alt="Competences"></div>
-
-	<!----------------------- GESTION DES MESSAGES----------------------->
-	<div class="espace"></div>
-	<div class="container-fluid">
-		<div class="row titreG">
-			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" id="3">
-				<h2> INTERFACE DE GESTION DES MESSAGES </h2>
-				<h4> Nouveau message </h4>
-			</div>
-		</div>
-	</div>
-	<div class="espace"></div>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"> </div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-				<form>
+				<form method="post">
 					<div class="form-group">
-						<label for="textarea">Votre message : </label>
-						<textarea id="textarea" class="form-control"></textarea>
+						<p>Ajouter un message : </p>
+						<input type="text" class="form-control" name="titre" placeholder="Titre du message">
+						<textarea id="textarea" name="conte" placeholder="Contenu du message" class="form-control"
+							required></textarea>
+						<input type="date" class="form-control" name="date">
 					</div>
+					<button type="submit" name="submit2" class="btn btn-primary btn-lg">Ajouter</button>
+					<?php
+				$conte=$_POST['conte'];
+				$titre=$_POST['titre'];
+				$date =$_POST['date'];
+				if(isset($_POST['submit2'])){
+					
+					$dbh->query("INSERT INTO message (`titre`, `contenu`, `date`) VALUES ('$titre', '$conte','$date') ");
+					header('support.php');
+					}
+					
+				?>
 				</form>
+
 				<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"></div>
 			</div>
-		</div>
-	</div>
-	<div class="container text-center">
-		<div class="row">
-			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"> </div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-				<form action="/action_page.php">
-					Date:
-					<input type="date" name="date">
-
-				</form>
-			</div>
-			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"></div>
 
 		</div>
-	</div>
-	<div class="espace"></div>
-	<!--------- BOUTON GESTION DES MESSAGES ---------->
-	<div class="container-fluid text-center">
-		<div class="row">
-			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"> </div>
-			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-				<button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
-			</div>
-			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"></div>
-		</div>
-	</div>
-	<div class="espace"></div>
-	<div class="espace"></div>
-	<div class="container-fluid">
-		<div class="row titreG">
-			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-				<p>&#8600 Retour en haut de page &#8601</p>
-				<a href="#"><span class="diamond">back to top</span></a>
-			</div>
+		<div class="main-carousel mt-5 col-8 offset-2" data-flickity='{ "cellAlign": "left", "contain": true }'>
+			<div class="carousel-cell"> ttt</div>
+			<div class="carousel-cell">...</div>
+			<div class="carousel-cell">...</div>
 		</div>
 
-		<?php include('footer.php');?>
 
-
-									<!----------------------------- SCRIPT ----------------------->
-									<script src="js/main.js"></script>
-									<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
-									</script>
-									<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-									<script src="java/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8">
-									</script>
+		
+			<!----------------------------- SCRIPT ----------------------->
+			<script src="js/main.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+			</script>
+			<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+			<script src="java/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
+			<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 </body>
 

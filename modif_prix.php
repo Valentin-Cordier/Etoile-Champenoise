@@ -33,12 +33,12 @@
     </div> 
     
     </div>
-    <button type="submit" name="submit" class="btn btn-primary btn-lg">Modifier</button>
+    <button type="submit" name="submit1" class="btn btn-primary btn-lg">Modifier</button>
 </form>
 <?php
 $var1= $_POST['login'];
 $var2= $_POST['mdp'];
-if(isset($_POST['submit'])){
+if(isset($_POST['submit1'])){
 $dbh->query("UPDATE `traction` SET `TONNE` = '$var1', `PALETTE` = '$var2' WHERE `traction`.`id_traction`= $current_id");
 header('location:tarif-t.php');
 }
