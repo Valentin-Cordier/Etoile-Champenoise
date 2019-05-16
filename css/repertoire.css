@@ -32,13 +32,19 @@ span{
 }
 .txtmed{
   padding-top: 0.75em;
+}
+.y-txtmed{
+  color: white;
+}
+#li{
+  list-style-type: none !important;
   border-radius: 0.25rem;
   border: 1px solid #007bff;
+  margin-top: 1em;
+  margin-bottom: 1em;
   background-color: #007bff;
   height: 3em !important;
-  color: white;
+  color: white !important;
   text-align: center;
-}
-.y txtmed{
-  color: #007bff;
+
 }

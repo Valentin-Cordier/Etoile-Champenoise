@@ -181,12 +181,7 @@ nav ul li a {
     width: 13em;
     display: none;
     background-color: #023871;
-  }
-
-  .ul .li {
-    display: none;
     text-align: right;
-    background-color: #023871;
   }
 }
 

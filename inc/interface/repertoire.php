@@ -34,34 +34,34 @@ $id = $_POST['name'];
             $var8 = "Non renseigné";
         }
         echo'<form>
-           <div class="container">
-              <div class="row justify-content-center">
-                  <div class="col-5 mt-4 mb-5">
-                       <p><span class="mid1" id="mid1">Nom Entreprise: '.$var1.'</span></p>
+             <div class="container-fluid">
+              <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                       <li id="li"><p>Nom Entreprise: '.$var1.'</p></li>
                   </div>';
-                  echo'<div class="col-5 mt-4 mb-5">
-                       <p><span class="mid1">Adresse Postale: '.$var2.'</span></p>
+                  echo'<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                       <li id="li"><p>Adresse Postale: '.$var2.'</p></li>
                   </div>';
-                  echo'<div class="col-5 mt-4 mb-5">
-                      <p><span class="mid1">Complément d adresse: '.$var3.'</span></p>
+                  echo'<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                      <li id="li"><p>Complément d adresse: '.$var3.'</p></li>
                   </div>';
-                  echo'<div class="col-5 mt-4 mb-5">
-                       <p><span class="mid1">Code Postale: '.$var4.'</span></p>
+                  echo'<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                       <li id="li"><p>Code Postale: '.$var4.'</p></li>
                   </div>';
-                  echo'<div class="col-5 mt-4 mb-5">
-                      <p><span class="mid1">Ville: '.$var5.'</span></p>
+                  echo'<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                      <li id="li"><p>Ville: '.$var5.'</p></li>
                   </div>';
-                  echo'<div class="col-5 mt-4 mb-5">
-                    <p><span class="mid1">Téléphone: '.$var6.'</span></p>
+                  echo'<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <li id="li"><p>Téléphone: '.$var6.'</p></li>
                   </div>';
-                  echo'<div class="col-5 mt-4 mb-5">
-                      <p><span class="mid1">Fax: '.$var7.'</span></p>
+                  echo'<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                      <li id="li"><p>Fax: '.$var7.'</p></li>
                   </div>';
-                  echo'<div class="col-5 mt-4 mb-5">
-                       <p><span class="mid1">Email: '.$var8.'</span></p>
+                  echo'<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                       <li id="li"><p>Email: '.$var8.'</p></li>
                   </div>
               </div>
-              </div>
+             </div>
           </form>';
 
 
