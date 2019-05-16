@@ -66,7 +66,7 @@ include 'inc/interface/verif_co.php';?>
         <div class="row">
           <div class="col-xl-3 col-lg-3 col-md-4 col-sm-10 col-10">
           </div>
-          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <?php require_once 'inc/interface/suivis.php';?></div>
           <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
 
