@@ -21,10 +21,10 @@
         <i class="fas fa-bars menu"></i>
       </div>
       <!--Icone de connexion et de déconnexion-->
-      <ul>
-        <li><a href="index.php">Accueil</a></li>
-        <li><a href="espace.php">Espace Suivi</a></li>
-        <li class=dropdown2>
+      <ul class="ul">
+        <li id="li"><a href="index.php">Accueil</a></li>
+        <li id="li"><a href="espace.php">Espace Suivi</a></li>
+        <li class="dropdown2" id="li">
           <a href="javascript:void(0)" class="dropbtn2">Documents</a>
           <div class="dropdown-content2">
             <a href="reglement.php">Réglement</a>
@@ -32,12 +32,12 @@
             <a href="tarif-t.php">Tarifs Traction</a>
             <a href="tarif-d.php"> Tarifs Distibution</a>
           </div>
-        <li><a href="repertoire.php">Répertoire</a></li>
-        <li><a href="carte.php">Carte Interactive</a></li>
+        <li id="li"><a href="repertoire.php">Répertoire</a></li>
+        <li id="li"><a href="carte.php">Carte Interactive</a></li>
         <?php if(isset($_SESSION['admin'])){
         echo'
-          <li><a href="support.php" class="dropbtn">Support Administrateur</a></li>';} ?>
-        <li><a href="inc/interface/log_out.php"><i class="fas fa-sign-in-alt"></i></a></li>
+          <li id="li"><a href="support.php" class="dropbtn">Support Administrateur</a></li>';} ?>
+        <li id="li"><a href="inc/interface/log_out.php"><i class="fas fa-sign-in-alt"></i></a></li>
         <!--<li><a><i class="fas fa-sign-out-alt"></i></a></li>-->
 
       </ul>
@@ -51,7 +51,7 @@
 <script>
   $('document').ready(function () {
     $('.menu').click(function () {
-      $('ul').toggleClass('active');
+      $('.ul').toggleClass('active');
     })
   })
 </script>
