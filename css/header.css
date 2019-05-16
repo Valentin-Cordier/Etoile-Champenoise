@@ -35,7 +35,7 @@ nav {
   line-height: 3em;
   border: none;
   background-color: #023871 !important;
-  
+
 }
 
 
@@ -59,7 +59,7 @@ a:hover{
 /*changement de couleur de fond au passage de la souris sur les liens*/
 nav ul li:hover, .dropdown:hover .dropbtn .dropdown2:hover .dropbtn2 {
   background-color: #E5BB16 !important;
-  
+
 }
 li.dropdown {
   display: inline-grid;
@@ -94,7 +94,7 @@ li.dropdown2 {
 }
 
 .dropdown-content a {
-  
+
   padding: 0.85em 1em;
   text-decoration: none;
   display: block;
@@ -103,7 +103,7 @@ li.dropdown2 {
 }
 
 .dropdown-content2 a {
-  
+
   padding: 0.85em 1em;
   text-decoration: none;
   display: block;
@@ -172,21 +172,16 @@ nav ul li a {
   color: #023871;
   display: none;
 }*/
-@media (max-width: 952px) {
+@media (max-width: 977px) {
   .toggle {
     display: block;
   }
 
-  ul {
+  a {
     width: 13em;
     display: none;
     background-color: #023871;
-  }
-
-  ul li {
-    display: none;
     text-align: right;
-    background-color: #023871;
   }
 }
 

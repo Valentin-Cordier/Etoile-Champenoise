@@ -16,12 +16,13 @@
 .mid1{
   width: 100% !important;
   height: 3em !important;
-  padding: .375rem 30% .375rem 30%;
+  padding: .375rem 10% .375rem 10%;
   height: calc(2.25rem + 2px);
   border-radius: 0.25rem;
   border: 1px solid #007bff;
   background-color: #007bff;
   color: white;
+  /*margin-left: 5em !important;*/
 }
 .offset-3{
   margin-left: 0 !important

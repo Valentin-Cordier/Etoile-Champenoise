@@ -34,30 +34,30 @@ $id = $_POST['name'];
             $var8 = "Non renseigné";
         }
         echo'<form>
-           <div class="container-fluid">
+           <div class="container">
               <div class="row justify-content-center">
-                  <div class="col-6 mt-4">
-                       <p><span class="mid1">Nom Entreprise: '.$var1.'</span></p>
+                  <div class="col-5 mt-4 mb-5">
+                       <p><span class="mid1" id="mid1">Nom Entreprise: '.$var1.'</span></p>
                   </div>';
-                  echo'<div class="col-6 mt-4">
+                  echo'<div class="col-5 mt-4 mb-5">
                        <p><span class="mid1">Adresse Postale: '.$var2.'</span></p>
                   </div>';
-                  echo'<div class="col-6 mt-4">
+                  echo'<div class="col-5 mt-4 mb-5">
                       <p><span class="mid1">Complément d adresse: '.$var3.'</span></p>
                   </div>';
-                  echo'<div class="col-6 mt-4">
+                  echo'<div class="col-5 mt-4 mb-5">
                        <p><span class="mid1">Code Postale: '.$var4.'</span></p>
                   </div>';
-                  echo'<div class="col-6 mt-4">
+                  echo'<div class="col-5 mt-4 mb-5">
                       <p><span class="mid1">Ville: '.$var5.'</span></p>
                   </div>';
-                  echo'<div class="col-6 mt-4">
+                  echo'<div class="col-5 mt-4 mb-5">
                     <p><span class="mid1">Téléphone: '.$var6.'</span></p>
                   </div>';
-                  echo'<div class="col-6 mt-4">
+                  echo'<div class="col-5 mt-4 mb-5">
                       <p><span class="mid1">Fax: '.$var7.'</span></p>
                   </div>';
-                  echo'<div class="col-6 mt-4 mb-5">
+                  echo'<div class="col-5 mt-4 mb-5">
                        <p><span class="mid1">Email: '.$var8.'</span></p>
                   </div>
               </div>
