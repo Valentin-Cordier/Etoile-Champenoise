@@ -12,7 +12,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 </head>
-
+<!----
 <header>
     <div class="container-fluid">
         <div class="row connect">
@@ -26,7 +26,7 @@
         </div>
     </div>
 </header>
-
+--->
 <body>
     <div class="espace"></div>
 
@@ -55,7 +55,7 @@
         </div>
 
         <div class="espace"></div>
-<!---------------------------------------------- 3 FENETRES ------------------>
+        <!---------------------------------------------- 3 FENETRES ---------------
 
         <div class="container-fluid">
             <div class="row">
@@ -108,93 +108,146 @@
 
             </div>
         </div>
-<!---------------------------------------------- ETOILES APRES 3 FENETRES------------------>
-<div class="espace"></div>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12">
-                </div>
-
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    <p><img class="icone" src="images/etoile.png"> Sûreté et traçabilité de vos expéditions grâce à un
-                        étiquetage code-barres Norme GTF Code INOVERT </p>
-                </div>
-
-                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12">
-                </div>
-
-                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
-                    <p><img class="icone" src="images/etoile.png"> Transit ADR assuré par du personnel formé à la
-                        gestion de matières dangereuses en colis (sauf classe 1 ; 6.2 et 7) </p>
-                </div>
-
-                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12">
-                </div>
-
-                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
-                    <p><img class="icone" src="images/etoile.png"> Contrôle de la qualité par un process unique et commun 
-assurant un suivi efficace </p>
-                </div>
-
-                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12">
-                </div>
-
-            </div>
-        </div>
-    </center>
-
-    <div class="espace"></div>
-
-    <!------------------------- Parallaxe ---------------------->
-    <div class="parallax-window" data-parallax="scroll" data-image-src="images/5.jpg" alt="Competences"></div>
-
-    <div class="espace"></div>
-    <div class="espace"></div>
-    <center>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-                    <h4> Au 01/01/2015 </h4>
-                    <div class="espace2"></div>
-                    <h4> L'Etoile Champenoise c'est : </h4>
-                    <div class="espace"></div>
-                    <p><img class="icone" src="images/etoile.png"> 6750 mètres carré </p>
-                    <div class="espace2"></div>
-                    <p><img class="icone" src="images/etoile.png"> 300 tonnes de marchandises traitées chaque nuit </p>
-                    <div class="espace2"></div>
-                    <p><img class="icone" src="images/etoile.png"> 2500 expéditions au quotidien </p>
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12">
-                </div>
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <img class="entrepot" src="images/4.jpg">
-                </div>
-                <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12">
-                </div>
-            </div>
-        </div>
-
+        --->
         <div class="espace"></div>
         <div class="espace"></div>
 
-        <!------------------------- Parallaxe ---------------------->
-        <div class="parallax-window" data-parallax="scroll" data-image-src="images/5.jpg" alt="Competences"></div>
+        <div class="parallax-window" data-parallax="scroll" data-image-src="images/5.jpg" alt="Competences">
 
-        <div class="espace"></div>
+            <div class="espace"></div>
+
+            <div class="container-fluid" id="cards">
+                <div class="row">
+                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12">
+                    </div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                <h3 class="separe"><img class="icone" src="images/etoile.png">Simplicité</h3>
+                            </div>
+                            <div class="card-body">
+                                <p> Sûreté et traçabilité de vos expéditions grâce à un
+                                    étiquetage code-barres Norme GTF Code INOVERT </p>
+                            </div>
+                            <div class="card-footer text-muted">
+                            </div>
+                        </div>
+                    </div>
 
 
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <img class="image-fluid carte" src="images/carte.png">
+
+
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                <h3 class="separe"><img class="icone" src="images/etoile.png">Fiabilité</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Transit ADR assuré par du personnel formé à la
+                                    gestion de matières dangereuses en colis (sauf classe 1 ; 6.2 et 7) </p>
+                            </div>
+                            <div class="card-footer text-muted">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                <h3 class="separe"><img class="icone" src="images/etoile.png">Rapidité</h3>
+                            </div>
+                            <div class="card-body">
+                                <p> Contrôle de la qualité par un process unique et commun
+                                    assurant un suivi efficace </p>
+                            </div>
+                            <div class="card-footer text-muted">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12">
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </center>
 
-    <div class="espace"></div>
-    <div class="espace"></div>
+        </div>
+
+        <!---------------------------------------------- ETOILES APRES 3 FENETRES------------------>
+
+
+
+        <div class="espace"></div>
+        <div class="espace"></div>
+        <center>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12">
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                <h3 class="separe"><img class="icone" src="images/etoile.png"> Au 01/01/2015<br>
+                                    l'ETOILE
+                                    Champenoise c’est : </h3>
+                            </div>
+                            <div class="espace2"></div>
+
+                            <div class="card-body">
+                                <p class="separe"><img class="icone" src="images/etoile.png"> 6750 mètres carrés </p>
+                                <div class="espace3"></div>
+                                <p class="separe"><img class="icone" src="images/etoile.png"> 300 tonnes de marchandises
+                                    traitées chaque nuit</p>
+                                <div class="espace3"></div>
+                                <p class="separe"><img class="icone" src="images/etoile.png"> 2500 expéditions au
+                                    quotidien </p>
+                            </div>
+                            <div class="card-footer text-muted">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12">
+                    </div>
+                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 col-12">
+                        <div class="hovereffect">
+                            <img class="entrepot" src="images/4.jpg">
+                            <div class="overlay">
+                                <h2>NOS LOCAUX</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12">
+                    </div>
+                </div>
+            </div>
+
+            <div class="espace"></div>
+            <div class="espace"></div>
+
+            <!------------------------- Parallaxe ---------------------->
+            <div class="parallax-window" data-parallax="scroll" data-image-src="images/mbsP.png" alt="Competences">
+            </div>
+
+            <div class="espace"></div>
+
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="zoom">
+                            <div class="zoomer">
+                                <img class="image-fluid carte" src="images/carte.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </center>
+
+        <div class="espace"></div>
+        <div class="espace"></div>
 
 </body>
 
@@ -208,5 +261,7 @@ assurant un suivi efficace </p>
 <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
 <script src="java/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8">
 </script>
+
+
 
 </html>
