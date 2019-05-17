@@ -4,14 +4,9 @@
 <head>
     <title>Etoile Champenoise 2019</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
 </head>
 
 <body>
@@ -41,7 +36,7 @@
                         <ul style="color:white; list-style: none;">
                             <h4 style="color:white;">Email</h4>
                             <li><strong>Email-Exploitation :</strong> transit@etoileschampenoise.fr</li>
-                            <li><strong>Email-Direction :</strong> franck.ame@etoilechampenoise.fr</li>
+                            <li><strong>Email-Direction :</strong> nadia.muller@etoilechampenoise.fr</li>
                         </ul>
                     </div>
                 </div>
@@ -52,6 +47,7 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <hr style="background-color:white;">
                     <h4 class="text-center" style="color:#E5BB16">&copy Etoile Champenoise 2019</h4>
+                    <a href="#">Mention Légale</a></p>
                 </div>
             </div>
         </div>

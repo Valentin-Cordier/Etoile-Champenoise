@@ -31,8 +31,8 @@ include 'inc/interface/verif_co.php';?>
 
     <div class="fillframe">
       <div class="container-fluid">
-        <form method="POST" action="#" class="">
-          <select class="select mx-auto mt-3" name="name">
+        <form method="POST" action="#" class="col-12 text-center offset-3 mt-5">
+          <select class="select" name="name">
             <option selected>Sélection de votre partenaire</option>
             <?php
               $req = $dbh->prepare('SELECT * FROM user WHERE IDuser != 40 AND zip != 00000 ORDER BY zip ');
@@ -74,6 +74,7 @@ include 'inc/interface/verif_co.php';?>
         </div>
       </div>
     </div>
+  </div>
     <?php include('footer.php');?>
 </body>
 
