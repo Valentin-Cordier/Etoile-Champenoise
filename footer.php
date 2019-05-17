@@ -46,7 +46,7 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <hr style="background-color:white;">
                     <h4 class="text-center" style="color:#E5BB16">&copy Etoile Champenoise 2019</h4>
-                    <a href="#">Mention Légale</a></p>
+                    <a href="#" class="a">Mention Légale</a></p>
                 </div>
             </div>
         </div>
