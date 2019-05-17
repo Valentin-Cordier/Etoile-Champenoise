@@ -28,9 +28,8 @@ include 'inc/interface/verif_co.php';?>
 
 
       <div class="fillframe">
-
+        <div class="container-fluid">
           <form method="POST" action="#" class="col-12 text-center offset-3 mt-5">
-
               <select class="select" name="name">
                 <option selected>Sélection de votre partenaire</option>
                 <?php
@@ -47,6 +46,7 @@ include 'inc/interface/verif_co.php';?>
 
                 }
                 ?>
+              </div>
 
 
       <div id="rer" class="intframe">
