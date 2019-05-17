@@ -36,6 +36,7 @@
                         <ul style="color:white; list-style: none;">
                             <h4 style="color:white;">Email</h4>
                             <li><strong>Email-Exploitation :</strong> transit@etoileschampenoise.fr</li>
+                            <li><strong>Email-Direction :</strong> nadia.muller@etoilechampenoise.fr</li>
                         </ul>
                     </div>
                 </div>
