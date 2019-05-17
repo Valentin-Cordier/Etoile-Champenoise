@@ -229,20 +229,38 @@ if(!isset($_SESSION['admin'])){
 
 		</div>
 		<div class="main-carousel mt-5 col-8 offset-2" data-flickity='{ "cellAlign": "left", "contain": true }'>
-			<div class="carousel-cell"> ttt</div>
-			<div class="carousel-cell">...</div>
-			<div class="carousel-cell">...</div>
+			<?php 
+			$super=$dbh->query('SELECT * FROM message WHERE id_message >1');
+			$sup=$super->fetchAll();
+			foreach($sup as $su){
+			echo ("<div class='carousel-cell w-50 text-center'>
+					<div class='card mx-auto w-100 card'>
+						<div class='card-body'>
+							<h5 class='card-title'>".$su['titre']."</h5>
+							<h6 class='card-subtitle mb-2 text-muted'>".$su['date']."</h6>
+							<p class='card-text'>".$su['contenu']."</p>
+							<div class='row d-flex justify-content-center'>
+								<button href='modif_mess.php?id=".$su[id_message]."' class='btn btn-primary mr-3'>Modifier</button>
+								<a href='inc/intedelete_mess.php?id=".$su[id_message]."' class='btn btn-danger'>Supprimer</a>
+							</div>
+						</div>
+					</div>
+				</div>");
+			}
+			?>
+
+
 		</div>
 
 
-		
-			<!----------------------------- SCRIPT ----------------------->
-			<script src="js/main.js"></script>
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
-			</script>
-			<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
-			<script src="java/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
-			<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+		<!----------------------------- SCRIPT ----------------------->
+		<script src="js/main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+		</script>
+		<script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+		<script src="java/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 </body>
 
