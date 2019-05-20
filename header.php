@@ -22,7 +22,7 @@
       </div>
       <!--Icone de connexion et de déconnexion-->
       <ul class="ul">
-        <li class="li"><a href="index.php">Accueil</a></li>
+        <li class="li"><a href="accueil.php">Accueil</a></li>
         <li class="li"><a href="espace.php">Espace Suivi</a></li>
         <li class="dropdown2">
           <a href="javascript:void(0)" class="dropbtn2">Documents</a>
