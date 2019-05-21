@@ -28,7 +28,7 @@
         <div class="checkbox mb-3">
         </div>
         <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">Se connecter</button>
-        <a href="../index.php">Retour à l'Accueil</a>
+        <a href="../index.php" class="ac">Retour à l'Accueil</a>
         <p class="mt-5 mb-3 text-light text-center">&copy; Etoile Champenoise 2019</p>
     </form>
     <?php
