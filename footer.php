@@ -4,7 +4,7 @@
 <head>
     <title>Etoile Champenoise 2019</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
@@ -47,7 +47,7 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <hr style="background-color:white;">
                     <h4 class="text-center" style="color:#E5BB16">&copy Etoile Champenoise 2019</h4>
-                    <a href="mentions.php" class="a">Mentions Légales</a></p>
+                    <a href="mentions.php" class="a">Mentions Légales</a>
                 </div>
             </div>
         </div>

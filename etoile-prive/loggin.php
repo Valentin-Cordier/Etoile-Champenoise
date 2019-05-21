@@ -13,7 +13,7 @@
 </head>
 
 <body>
- 
+
     <form  method="post" class="form-signin ">
         <div id="logo" class="mb-5 mx-auto text-center">
     <img class="mt-5" src="images/logo.png" width="200px" alt="logo étoile champenoise">
@@ -28,20 +28,21 @@
         <div class="checkbox mb-3">
         </div>
         <button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">Se connecter</button>
+        <a href="../index.php" class="ac">Retour à l'Accueil</a>
         <p class="mt-5 mb-3 text-light text-center">&copy; Etoile Champenoise 2019</p>
     </form>
-    <?php 
+    <?php
     include 'inc/interface/co.php';
     $req = $dbh->prepare('SELECT * FROM `login` WHERE `login` = :email AND `mdp` = :passsword');
     if(isset($_POST['submit'])){
-      
+
         $req->execute([
         'email' => $_POST['email'],
         'passsword' => $_POST['password']
         ]);
 
         $user = $req->fetch();
-    
+
         if($user){
             if($user['type']==1){
             $_SESSION['user'] = $_POST['email'];
@@ -56,6 +57,6 @@
          </div>";
        }
     }
-   
-    ?>   
+
+    ?>
 <body>
