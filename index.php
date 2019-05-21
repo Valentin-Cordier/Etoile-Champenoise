@@ -34,7 +34,7 @@
                         <h4> 51520 RECY, plate-forme au </h4>
                         <h4> coeur de l'Europe </h4>
                         <div class="espace"></div>
-                        <a href="site/loggin.php"><button type="button" class="btn btn-outline-primary btn-lg">Se
+                        <a href="etoile-prive/loggin.php"><button type="button" class="btn btn-outline-primary btn-lg">Se
                                 connecter</button></a>
                         <div class="espace"></div>
                     </div>
