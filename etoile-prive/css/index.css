@@ -209,3 +209,9 @@ body{
     -o-transform:scale(1.25); /* Opera */
     transform:scale(1.25);
     }
+
+    .pop{
+        position: absolute;
+        color:white;
+        margin-top:40%;
+    }

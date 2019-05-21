@@ -13,6 +13,7 @@
     </script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -34,7 +35,7 @@
                         <h4> 51520 RECY, plate-forme au </h4>
                         <h4> coeur de l'Europe </h4>
                         <div class="espace"></div>
-                        <a href="site/loggin.php"><button type="button" class="btn btn-outline-primary btn-lg">Se
+                        <a href="etoile-prive/loggin.php"><button type="button" class="btn btn-outline-primary btn-lg">Se
                                 connecter</button></a>
                         <div class="espace"></div>
                     </div>
@@ -173,7 +174,7 @@
 
 <?php include('footer.php'); ?>
 
-<link rel="stylesheet" href="css/index.css">
+
 <!----------------------------- SCRIPT ----------------------->
 <script src="js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
