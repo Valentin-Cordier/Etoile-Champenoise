@@ -132,6 +132,9 @@ body {
     height: 850px;
     background: transparent;
   }
+  #txt{
+    font-size:1em;
+  }
 }
 
 #cards {
@@ -232,7 +235,7 @@ body {
 .supit{
   width:200px;
   height:200px;
-  background:rgb(196, 155, 43);
+  background:whitesmoke;
   border-radius:50%;
   color: rgb(31, 39, 92);
   font-size:2em;
@@ -334,7 +337,9 @@ body {
       font-size: 1.5rem;
       font-weight: 800;
     }
-    
+    #txt{
+      font-size:1.2em;
+    }
     .infos .infos-lower {
       display: block;
       font-size: 3rem;
@@ -351,7 +356,6 @@ body {
       height: 700px;
       position: relative;
       
-      background: rgb(31, 39, 92);
       color: white;
       overflow: hidden;
     }
@@ -383,6 +387,9 @@ body {
       left: 70.5%; /* need a slight overlap */
     }
     }
+    #txt{
+      font-size:2em;
+    }
 
   @media (max-width: 750px) {
 
@@ -397,6 +404,9 @@ body {
       font-size: 2.8rem;
       font-weight: 100;
     }
+    #txt{
+      font-size:1.5em;
+    }
 
     .texteDiagonale {
       font-size: 1.3em;
@@ -408,7 +418,7 @@ body {
       height: 700px;
       position: relative;
       
-      background: rgb(31, 39, 92);
+      
       color: white;
       overflow: hidden;
     }
@@ -438,4 +448,15 @@ body {
     .image-right {
       left: 70.5%; /* need a slight overlap */
     }
+    }
+
+    @media (max-width: 1400px){
+      #txt{
+        font-size:1.3em;
+      }
+    }
+    @media (max-width: 1150px){
+      #txt{
+        font-size:1em;
+      }
     }

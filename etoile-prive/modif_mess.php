@@ -39,3 +39,41 @@ if(!isset($_SESSION['admin'])){
 <body>
 
 	<?php include('header.php');?>
+
+	<div class="container-fluid mt-5">
+		<div class="row mt-5">
+			<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12 mt-5"> </div>
+			<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 mt-5">
+				<form method="post">
+				<?php
+				include 'inc/interface/co.php';
+					$current_id=$_GET['id'];
+					$req=$dbh->query('SELECT * from message WHERE id_message= '.$current_id.'');
+					$res=$req->fetch();
+					?>
+					<div class="form-group">
+						<p>modifier un message :</p>
+						<input type="text" class="form-control" name="titre" value="<?=$res['titre']?>" placeholder="Titre du message">
+						<textarea id="textarea" name="conte" placeholder="Contenu du message" class="form-control"
+							required><?=$res['contenu']?></textarea>
+						<input type="date" class="form-control" value="<?=$res['date']?>" name="date">
+					</div>
+					<button type="submit" name="submit2" class="btn btn-primary btn-lg">Modifier</button>
+					<?php
+				$conte=$_POST['conte'];
+				$titre=$_POST['titre'];
+				$date =$_POST['date'];
+				if(isset($_POST['submit2'])){
+					
+					$dbh->query("UPDATE message SET `titre`='$titre', `contenu`='$conte', `date`='$date' WHERE id_message=$current_id"); 
+					header('location:support.php');
+					}
+					
+				?>
+				</form>
+
+				<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"></div>
+			</div>
+
+		</div>
+</body>

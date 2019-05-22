@@ -260,7 +260,7 @@ if(!isset($_SESSION['admin'])){
 							<h6 class='card-subtitle mb-2 text-muted'>".$su['date']."</h6>
 							<p class='card-text'>".$su['contenu']."</p>
 							<div class='row d-flex justify-content-center'>
-								<button href='modif_mess.php?id=".$su[id_message]."' class='btn btn-primary mr-3'>Modifier</button>
+								<a href='modif_mess.php?id=".$su[id_message]."' class='btn btn-primary mr-3'>Modifier</a>
 								<a href='inc/interface/delete_mess.php?id=".$su[id_message]."' class='btn btn-danger'>Supprimer</a>
 							</div>
 						</div>

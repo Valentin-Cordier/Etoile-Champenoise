@@ -65,6 +65,10 @@
                 </div>
             </div>
 </div>
+<div class="w-100 pt-5 pb-5 d-flex flex-lg-row flex-sm-column justify-content-around" style="background:rgb(196, 155, 43);color:rgb(31, 39, 92)">
+    <h2 ><span class="text-light">HUB</span> facilitateur de transport
+    <h2 ><span class="text-light" >OUVERTURE 24h/24h</span> 5 jours sur 7</h2>
+</div>
     </center>
     <div class="row pb-5 pt-5 d-flex justify-content-around text-light" style="background: rgb(31, 39, 92)">
         <div class="ite text-center mt-3 col-lg-3 col-sm-12">
@@ -114,13 +118,14 @@
                                     </span></b></i> c'est : </span>
 
                         </h2>
-                        <p class="texteDiagonale"><i class="fas fa-warehouse icone-caracteristique"></i>
-                            6750 mètres carrés
-                        </p>
+                       
                         <p class="texteDiagonale"><i class="fas fa-balance-scale icone-caracteristique"></i>
                             300 tonnes de marchandises traitées chaque nuit</p>
                         <p class="texteDiagonale"><i class="fas fa-truck icone-caracteristique"></i>
                             2500 expéditions au quotidien </p>
+                            <p class="texteDiagonale"><i class="fas fa-warehouse icone-caracteristique"></i>
+                            6750 mètres carrés
+                        </p>
                     </div>
                 </div>
             </div>
@@ -129,10 +134,16 @@
     <div class='image-right'></div>
 </div>
 
-<div class="row d-flex">
-<img class="col-6 h-100 img-fluid" src="images/carte.png">
-<div>
-    <
+
+<div class="row d-flex "style="background-color:rgb(31, 39, 92)">
+<img class="col-lg-6 col-sm-12 h-100 " src="images/carte.png">
+<div class="col-lg-6 col-sm-12 pt-lg-5" > 
+    <h2 class="mx-auto text-light text-center mt-5"><span style="color:rgb(196, 155, 43)">L'ETOILE</span> Champenoise</h2>
+    <p id="txt" class="text-light col-8 offset-2 mt-4" >compte 17 associés et dessert 28 départements du Nord
+et de l’Est de la France en 24 heures. Ses connexions
+inter-plateformes vers d’autres hubs régionaux permettent
+de couvrir l’ensemble du territoire national.</p>
+</div>
 </div>
 
 
