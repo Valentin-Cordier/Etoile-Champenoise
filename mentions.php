@@ -15,7 +15,7 @@
       <div class="img"><img src="images/logo.png" style="width:110px; height:70px; margin-top: 0.2em;"></div>
       <!--Icone de connexion et de déconnexion-->
       <ul class="ul">
-        <li class="li"><a href="accueil.php">Accueil</a></li>
+        <li class="li"><a href="index.php">Accueil</a></li>
       </ul>
     </nav>
   </div>
