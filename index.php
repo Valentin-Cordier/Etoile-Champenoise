@@ -37,6 +37,8 @@
 
 <body>
 
+    <!-----------------------------  PAGE ACCUEIL ----------------------------------------->
+
     <Center>
         <div class="intro">
 
@@ -49,27 +51,37 @@
 
             <div class="container-fluid">
                 <div class="row">
+
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <h3 style="color:rgb(196, 155, 43)" class="col-6 mx-auto mb-5">Une porte ouverte sur L'Europe: 
-                        <span style="color:white"><strong>HUB</strong></span> de transit européen pour la <span style="color:white"><strong>MESSAGERIE</strong></span>
-                         et les <span style="color:white"><strong>PALETTES</strong></span></h3>
+                        <h3 style="color:rgb(196, 155, 43)" class="col-6 mx-auto mb-5">Une porte ouverte sur L'Europe:
+                            <span style="color:white"><strong>HUB</strong></span> de transit européen pour la <span
+                                style="color:white"><strong>MESSAGERIE</strong></span>
+                            et les <span style="color:white"><strong>PALETTES</strong></span></h3>
                         <h4> 51520 RECY, plate-forme au </h4>
                         <h4> coeur de l'Europe </h4>
-                       
+
                         <div class="espace"></div>
-                        <a href="etoile-prive/loggin.php"><button type="button"
-                                class="btn btn-outline-primary btn-lg">Se
-                                connecter</button></a>
+                        <a href="etoile-prive/loggin.php">
+                            <button type="button" class="btn btn-primary btn-lg">Se connecter</button>
+                        </a>
+
                         <div class="espace"></div>
+
                     </div>
                 </div>
             </div>
-</div>
-<div class="w-100 pt-5 pb-5 d-flex flex-lg-row flex-sm-column justify-content-around" style="background:rgb(196, 155, 43);color:rgb(31, 39, 92)">
-    <h2 ><span class="text-light">HUB</span> facilitateur de transport
-    <h2 ><span class="text-light" >OUVERTURE 24h/24h</span> 5 jours sur 7</h2>
-</div>
+        </div>
+
+        <div class="w-100 pt-5 pb-5 d-flex flex-lg-row flex-sm-column justify-content-around"
+            style="background:rgb(196, 155, 43);color:rgb(31, 39, 92)">
+            <h2><span class="text-light">HUB</span> facilitateur de transport
+                <h2><span class="text-light">OUVERTURE 24h/24h</span> 5 jours sur 7</h2>
+        </div>
+
     </center>
+
+    <!-----------------------------  PAGE CARACTERISTIQUES ----------------------------------------->
+
     <div class="row pb-5 pt-5 d-flex justify-content-around text-light" style="background: rgb(31, 39, 92)">
         <div class="ite text-center mt-3 col-lg-3 col-sm-12">
             <div class="supit mb-4 mx-auto">
@@ -88,8 +100,8 @@
             </div>
             <h4 class="mb-3" style="font-size:2em;color:rgb(196, 155, 43)">Fiabilité</h4>
 
-            <p class="col-lg-12 col-sm-6 mx-auto">Contrôle de la qualité par un process unique et commun assurant un
-                suivi efficace</p>
+            <p class="col-lg-12 col-sm-6 mx-auto">Transit ADR assuré par du personnel formé à la gestion de matières
+                dangereuses en colis (sauf classe 1 ; 6.2 et 7)</p>
 
         </div>
         <div class="ite text-center mt-3 col-lg-3 col-sm-12">
@@ -102,54 +114,56 @@
 
         </div>
     </div>
-   <!---------------------------------------------- ETOILES APRES 3 FENETRES------------------>
-   
 
-<div class='lol'>
-    <div class='image-left'>
-        <div class="container-fluid lol">
-            <div class="row">
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 align-self-center">
-                    <div class="carre-blanc rounded p-5">
-                        <h2 class="infos mb-4">
-                            <span class="infos-upper">Au 01/01/2015
-                            <span class="infos-lower"><i><b><span style="color:rgb(196, 155, 43);">l'ETOILE
-                                        Champenoise
-                                    </span></b></i> c'est : </span>
+    <!-------------------------------------- DIAGONALE ------------------------>
 
-                        </h2>
-                       
-                        <p class="texteDiagonale"><i class="fas fa-balance-scale icone-caracteristique"></i>
-                            300 tonnes de marchandises traitées chaque nuit</p>
-                        <p class="texteDiagonale"><i class="fas fa-truck icone-caracteristique"></i>
-                            2500 expéditions au quotidien </p>
+    <div class='diagonale'>
+        <div class='image-left'>
+            <div class="container-fluid diagonale">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 align-self-center">
+                        <div class="carre-blanc rounded p-5">
+                            <h2 class="infos mb-4">
+                                <span class="infos-lower"><i><b><span style="color:rgb(196, 155, 43);">l'ETOILE
+                                                Champenoise
+                                            </span></b></i> c'est :</span>
+                            </h2>
+
+                            <p class="texteDiagonale"><i class="fas fa-balance-scale icone-caracteristique"></i>
+                                300 tonnes de marchandises traitées chaque nuit</p>
+                            <p class="texteDiagonale"><i class="fas fa-truck icone-caracteristique"></i>
+                                2500 expéditions au quotidien </p>
                             <p class="texteDiagonale"><i class="fas fa-warehouse icone-caracteristique"></i>
-                            6750 mètres carrés
-                        </p>
+                                6750 mètres carrés
+                            </p>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class='image-right'></div>
     </div>
-    <div class='image-right'></div>
-</div>
+
+     <!-------------------------------------- CARTE ET TEXTE --------------------------->
 
 
-<div class="row d-flex "style="background-color:rgb(31, 39, 92)">
-<img class="col-lg-6 col-sm-12 h-100 " src="images/carte.png">
-<div class="col-lg-6 col-sm-12 pt-lg-5" > 
-    <h2 class="mx-auto text-light text-center mt-5"><span style="color:rgb(196, 155, 43)">L'ETOILE</span> Champenoise</h2>
-    <p id="txt" class="text-light col-8 offset-2 mt-4" >compte 17 associés et dessert 28 départements du Nord
-et de l’Est de la France en 24 heures. Ses connexions
-inter-plateformes vers d’autres hubs régionaux permettent
-de couvrir l’ensemble du territoire national.</p>
-</div>
-</div>
+    <div class="row d-flex " style="background-color:rgb(31, 39, 92)">
+        <img class="col-lg-6 col-sm-12 h-100 " src="images/carte.png">
+        <div class="col-lg-6 col-sm-12 pt-lg-5">
+            <h2 class="mx-auto text-light text-center mt-5"><span style="color:rgb(196, 155, 43)">L'ETOILE</span>
+                Champenoise</h2>
+            <p id="txt" class="text-light col-8 offset-2 mt-4">compte 15 associés et dessert 28 départements du Nord
+                et de l’Est de la France en 24 heures. Ses connexions
+                inter-plateformes vers d’autres hubs régionaux permettent
+                de couvrir l’ensemble du territoire national.</p>
+        </div>
+    </div>
 
 
- 
 
-  
+
+
 </body>
 
 <?php include('footer.php'); ?>
