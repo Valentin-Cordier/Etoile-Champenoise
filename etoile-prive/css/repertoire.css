@@ -66,3 +66,7 @@ span {
   color: white !important;
   text-align: center;
 }
+
+p {
+  padding-top: 0.75em;
+}
