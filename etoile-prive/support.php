@@ -248,7 +248,7 @@ if(!isset($_SESSION['admin'])){
 		<div class="pb-5">
 			<div class="main-carousel mt-5  col-8 offset-2" data-flickity='{ "cellAlign": "left", "contain": true }'>
 				<?php
-			$super=$dbh->query('SELECT * FROM message WHERE id_message >1');
+			$super=$dbh->query('SELECT * FROM message WHERE id_message >1 ORDER BY date DESC LIMIT 50');
 			$sup=$super->fetchAll();
 			foreach($sup as $su){
 			echo ("<div class='carousel-cell w-50 text-center'>
@@ -258,8 +258,8 @@ if(!isset($_SESSION['admin'])){
 							<h6 class='card-subtitle mb-2 text-muted'>".$su['date']."</h6>
 							<p class='card-text'>".$su['contenu']."</p>
 							<div class='row d-flex justify-content-center'>
-								<a href='modif_mess.php?id=".$su[id_message]."' class='btn btn-primary mr-3'>Modifier</a>
-								<a href='inc/interface/delete_mess.php?id=".$su[id_message]."' class='btn btn-danger'>Supprimer</a>
+								<a href='modif_mess.php?id=".$su['id_message']."' class='btn btn-primary mr-3'>Modifier</a>
+								<a href='inc/interface/delete_mess.php?id=".$su['id_message']."' class='btn btn-danger'>Supprimer</a>
 							</div>
 						</div>
 					</div>

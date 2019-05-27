@@ -56,10 +56,10 @@ include 'inc/interface/verif_co.php';
   <div class="main-carousel  col-12" data-flickity='{ "cellAlign": "left", "contain": true }'>
       <?php
 
-			$super=$dbh->query('SELECT * FROM message WHERE id_message >1');
+			$super=$dbh->query('SELECT * FROM message WHERE id_message >1 ORDER BY date DESC LIMIT 50');
 			$sup=$super->fetchAll();
 			foreach($sup as $su){
-			echo ("<div class='carousel-cell w-100 text-center'>
+			echo ("<div class='carousel-cell w-50 text-center'>
 					<div class='card mx-auto w-100 card'>
 						<div class='card-body'>
 							<h5 class='card-title'>".$su['titre']."</h5>
@@ -67,8 +67,8 @@ include 'inc/interface/verif_co.php';
               <p class='card-text'>".$su['contenu']."</p>");
               if(isset($_SESSION['admin'])){
                 echo "<div class='row d-flex justify-content-center'>
-								<button href='modif_mess.php?id=".$su[id_message]."' class='btn btn-primary mr-3'>Modifier</button>
-								<a href='inc/intedelete_mess.php?id=".$su[id_message]."' class='btn btn-danger'>Supprimer</a>
+								<button href='modif_mess.php?id=".$su['id_message']."' class='btn btn-primary mr-3'>Modifier</button>
+								<a href='inc/intedelete_mess.php?id=".$su['id_message']."' class='btn btn-danger'>Supprimer</a>
 							</div>";
               }
 							echo"
