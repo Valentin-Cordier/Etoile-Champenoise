@@ -48,11 +48,31 @@
   integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
   crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
 <script>
   $('document').ready(function () {
     $('.menu').click(function () {
       $('.ul').toggleClass('active');
     })
   })
+  window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "black"
+    },
+    "button": {
+      "background": "#f1d600"
+    }
+  },
+  "showLink": false,
+  "theme": "edgeless",
+  "content": {
+    "message": "Ce site utilise des cookies pour vous garantir la meilleure expérience sur notre site.",
+    "dismiss": "J'ai compris"
+  }
+})});
 </script>
+
 </html>

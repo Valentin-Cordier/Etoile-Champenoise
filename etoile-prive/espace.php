@@ -40,7 +40,7 @@ include 'inc/interface/verif_co.php';?>
     alt="Responsive image de livraison">
   <div class="container-fluid col-12 text-center mt-3">
     <hr class="col-6" style="background-color: #0477BF; margin-top: 6em; ">
-    <h1>Suivis de votre livraison</h1>
+    <h1>Suivi de votre livraison</h1>
     <hr class="col-6" style="background-color: #0477BF;">
   </div>
   <div id="esr" class="container-fluid col-12 text-center mt-3">

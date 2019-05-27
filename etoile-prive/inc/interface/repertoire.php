@@ -37,16 +37,16 @@ $id = $_POST['name'];
              <div class="container-fluid">
               <div class="row">
                   <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                       <li id="li"><p>Nom Entreprise: '.$var1.'</p></li>
+                       <li id="li"><p>Nom de l"Entreprise: '.$var1.'</p></li>
                   </div>';
                   echo'<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                        <li id="li"><p>Adresse Postale: '.$var2.'</p></li>
                   </div>';
                   echo'<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                      <li id="li"><p>Complément d adresse: '.$var3.'</p></li>
+                      <li id="li"><p>Complément d"adresse: '.$var3.'</p></li>
                   </div>';
                   echo'<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                       <li id="li"><p>Code Postale: '.$var4.'</p></li>
+                       <li id="li"><p>Code Postal: '.$var4.'</p></li>
                   </div>';
                   echo'<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
                       <li id="li"><p>Ville: '.$var5.'</p></li>

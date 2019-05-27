@@ -42,9 +42,9 @@ include 'inc/interface/verif_co.php';
   <?php include('header.php');?>
 
   <div id="jumbotron" class="mt-5">
-  <h1 class="w-100 text-center mt-5 pt-5 text-light" id="tit">Bienvenue <span><?php if(isset($_SESSION['admin'])){echo $_SESSION['admin'];}else{echo$_SESSION['user'];}; ?></span> !</h1>
-  <?php 
-  include "inc/interface/co.php"; 
+  <h1 class="w-100 text-center mt-5 pt-5 text-light" id="tit">Bonjour <span><?php if(isset($_SESSION['admin'])){echo $_SESSION['admin'];}else{echo$_SESSION['user'];}; ?></span> !</h1>
+  <?php
+  include "inc/interface/co.php";
   $sql=$dbh->query('SELECT * FROM message WHERE id_message=1');
   $res=$sql->fetch();
   echo'<h2 class="pop w-100 text-center">'.$res['contenu'].'</h2>';
@@ -55,7 +55,7 @@ include 'inc/interface/verif_co.php';
   </div>
   <div class="main-carousel  col-12" data-flickity='{ "cellAlign": "left", "contain": true }'>
       <?php
-      
+
 			$super=$dbh->query('SELECT * FROM message WHERE id_message >1');
 			$sup=$super->fetchAll();
 			foreach($sup as $su){

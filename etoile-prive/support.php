@@ -45,19 +45,14 @@ if(!isset($_SESSION['admin'])){
 
 	<div class="container-fluid text-center">
 		<div class="row">
-			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 				<a href="#1">
 					<p class="onglet"> Gestion de compte </p>
 				</a>
 			</div>
-			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 				<a href="#2">
-					<p class="onglet"> Gestion des messages pré-définis </p>
-				</a>
-			</div>
-			<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
-				<a href="#3">
-					<p class="onglet"> Gestion des messages </p>
+					<p class="onglet"> Gestion des messages</p>
 				</a>
 			</div>
 		</div>
@@ -68,14 +63,17 @@ if(!isset($_SESSION['admin'])){
 
 
 	<div class="container-fluid">
-		<h2> INTERFACE DE GESTION DE COMPTES </h2>
+		<h2 id="1"><u> INTERFACE DE GESTION DE COMPTES </u></h2>
+
+		<div class="espace"></div>
+
 		<div class="row titreG">
 			<!----------------------- COLONNE DE GAUCHE ----------------------->
-			<div class="mt- col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" id="1">
+			<div class="mt- col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12" >
 
 				<h4> Création d'un nouveau compte </h4>
 				<center>
-					<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 titreG" id="1">
+					<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 titreG">
 						<form method="post">
 							<div class="form-group">
 								<label for="texte">Nom de compte : </label>
@@ -104,7 +102,7 @@ if(!isset($_SESSION['admin'])){
 				$log= $_POST['login'];
 				$mdp = $_POST['mdp'];
 				$type =$_POST['type'];
-				$dbh->query("INSERT INTO login (`login`, `mdp`, `islocked`, `type`) VALUES ('$log', '$mdp','0', '$type')"); 
+				$dbh->query("INSERT INTO login (`login`, `mdp`, `islocked`, `type`) VALUES ('$log', '$mdp','0', '$type')");
 			}
 			?>
 
@@ -127,7 +125,7 @@ if(!isset($_SESSION['admin'])){
 									</tr>
 								</thead>
 								<tbody>
-									<?php 
+									<?php
     							include 'inc/interface/co.php';
 								$req = $dbh->query('SELECT * FROM `login`');
 								while ($donnees = $req->fetch()){
@@ -138,7 +136,7 @@ if(!isset($_SESSION['admin'])){
 										<td><?php if ($donnees['type']==2){echo 'Admin';}
 									else {echo 'User';} ?></td>
 
-										<td><?php if ($donnees['islocked']==0){echo 'Non';} 
+										<td><?php if ($donnees['islocked']==0){echo 'Non';}
 									else {echo 'Oui';} ?></td>
 
 										<div class="suppline2">
@@ -151,7 +149,7 @@ if(!isset($_SESSION['admin'])){
 										</div>
 
 
-										<td><?php if ($donnees['login']==Administrateur){echo 'Non supprimable';} 
+										<td><?php if ($donnees['login']==Administrateur){echo 'Non supprimable';}
 									else {echo '
 										<a href="inc/interface/delete_user.php?id='.$donnees['IDlogin'].'" class="btn btn-danger">SUPPRIMER</a>
 										';} ?></td>
@@ -206,7 +204,7 @@ if(!isset($_SESSION['admin'])){
 				<?php
 				$cont=$_POST['cont'];
 				if(isset($_POST['submit1'])){
-					
+
 					$dbh->query("UPDATE message SET contenu='$cont' WHERE id_message=1");
 					header('support.php');
 					}
@@ -235,11 +233,11 @@ if(!isset($_SESSION['admin'])){
 				$titre=$_POST['titre'];
 				$date =$_POST['date'];
 				if(isset($_POST['submit2'])){
-					
+
 					$dbh->query("INSERT INTO message (`titre`, `contenu`, `date`) VALUES ('$titre', '$conte','$date') ");
 					header('support.php');
 					}
-					
+
 				?>
 				</form>
 
@@ -249,7 +247,7 @@ if(!isset($_SESSION['admin'])){
 		</div>
 		<div class="pb-5">
 			<div class="main-carousel mt-5  col-8 offset-2" data-flickity='{ "cellAlign": "left", "contain": true }'>
-				<?php 
+				<?php
 			$super=$dbh->query('SELECT * FROM message WHERE id_message >1');
 			$sup=$super->fetchAll();
 			foreach($sup as $su){
@@ -270,7 +268,7 @@ if(!isset($_SESSION['admin'])){
 			?>
 			</div>
 		</div>
-		<?php 
+		<?php
 			include 'footer.php';
 			?>
 

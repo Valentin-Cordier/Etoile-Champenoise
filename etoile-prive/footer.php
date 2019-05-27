@@ -4,7 +4,7 @@
 <head>
     <title>Etoile Champenoise 2019</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
@@ -16,7 +16,7 @@
         <div class="container-fluid">
             <div class="pt d-flex justify-content-center">
                 <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 align-self-center">
                         <ul style="color:white; list-style: none;">
                             <h4 style="color:white;">Adresse</h4>
                             <li>Rue des Crayères</li>
@@ -24,7 +24,7 @@
                             <li>51520 RECY</li>
                         </ul>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 align-self-center">
                         <ul style="color:white; list-style: none;">
                             <h4 style="color:white;">Contactez-Nous</h4>
                             <li> <i class="fas fa-phone" style="color: #E5BB16;"></i> +33 (0)3 26 21 56 21</li>
@@ -32,11 +32,14 @@
                             <li> <i class="fas fa-mobile" style="color: #E5BB16;"></i> +33 (0)6 32 54 47 34</li>
                         </ul>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 align-self-center">
                         <ul style="color:white; list-style: none;">
                             <h4 style="color:white;">Email</h4>
-                            <li><strong>Email-Exploitation :</strong> transit@etoileschampenoise.fr</li>
-                            <li><strong>Email-Direction :</strong> nadia.muller@etoilechampenoise.fr</li>
+                            <li><strong> <i class="far fa-envelope" style="color: #E5BB16;"></i> Email-Exploitation :</strong> transit@etoileschampenoise.fr</li>
+                            <p> </p>
+                            <li><strong><li><i class="far fa-envelope" style="color: #E5BB16;"></i> Email-Administration :</strong> nadia.muller@etoilechampenoise.fr</li>
+                            <p> </p>
+                            <li><strong><li> <i class="far fa-envelope" style="color: #E5BB16;"></i> Email-responsable Plateforme :</strong> nadia.muller@etoilechampenoise.fr</li>
                         </ul>
                     </div>
                 </div>
@@ -47,7 +50,7 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                     <hr style="background-color:white;">
                     <h4 class="text-center" style="color:#E5BB16">&copy Etoile Champenoise 2019</h4>
-                    <a href="../mentions.php" class="a">Mentions Légales</a></p>
+                    <a href="../mentions.php" class="a">Mentions Légales</a>
                 </div>
             </div>
         </div>
