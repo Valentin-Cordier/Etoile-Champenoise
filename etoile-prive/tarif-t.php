@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -46,7 +48,7 @@
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12" id="1">
         <img class="logo" src="images/logo.png">
         </div>
-     
+
         </div>
 
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" id="1">
@@ -63,16 +65,19 @@
                                     <th>Kilomètres</th>
                                     <th>Prix traction à la tonne</th>
                                     <th>Prix traction à la palette</th>
-                                    <th>Modifier<th>
+                                    <?php if(isset($_SESSION['admin'])){
+                                         echo'
+                                         <th>Modifier<th>'
+                                         ;} ?>
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php 
+                                <?php
     							include 'inc/interface/co.php';
 								$req = $dbh->query('SELECT * FROM `traction`');
 								while ($donnees = $req->fetch()){
 							?>
-                           
+
                                 <tr >
                                     <td><?php echo $donnees['DPT']; ?></td>
 
@@ -84,7 +89,12 @@
 
 
                                     <td><?php echo $donnees['PALETTE']; ?></td>
+
+                                    <?php if(isset($_SESSION['admin'])){ ?>
+
                                     <td><a class="btn btn-warning" href="modif_prix.php?id=<?=$donnees['id_traction']?>">Modifier</a></td>
+
+                                    <?php } ?>
                                 </tr>
 
 
@@ -108,4 +118,3 @@
 
     </body>
     </html>
-    
