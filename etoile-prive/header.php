@@ -16,7 +16,7 @@
   <!--Barre nav avec images-->
   <div class="main">
     <nav id="nav">
-      <div class="img"><img src="images/logo.png" style="width:110px; height:70px; margin-top: 0.2em;"></div>
+      <div class="img"><img src="images/logo2.png" style="width:110px; height:70px; margin-top: 0.2em;"></div>
       <div class="toggle">
         <i class="fas fa-bars menu"></i>
       </div>
