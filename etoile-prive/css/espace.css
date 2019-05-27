@@ -5,10 +5,11 @@
   border-color: #023871 !important;
   font-size: 1.25rem !important;
 }
-.btn-primary:hover{
-background-color:  #E5BB16 !important;
-border-color: #E5BB16 !important;
-transition: 0.5s all !important;
+
+.btn-primary:hover {
+  background-color: #E5BB16 !important;
+  border-color: #E5BB16 !important;
+  transition: 0.5s all !important;
 }
 
 .select {
@@ -22,7 +23,8 @@ transition: 0.5s all !important;
   border-radius: 0.25rem;
   border: 1px solid #ced4da;
 }
-#li{
+
+#li {
   padding-top: 0.10em;
   list-style-type: none !important;
   border-radius: 0.25rem;
@@ -34,15 +36,16 @@ transition: 0.5s all !important;
   color: white !important;
   text-align: center;
 }
-#li:hover{
-  background-color:  #E5BB16 !important;
+
+.ralink:hover {
+  color: #E5BB16 !important;
   border-color: #E5BB16 !important;
 }
 
-
-.res{
+.res {
   padding-top: 0.65em;
 }
+
 .ralink {
   color: white !important;
   text-decoration: none;
