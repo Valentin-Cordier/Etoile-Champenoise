@@ -39,7 +39,7 @@
                             <p> </p>
                             <li><strong><li><i class="far fa-envelope" style="color: #E5BB16;"></i> Email-Administration :</strong> nadia.muller@etoilechampenoise.fr</li>
                             <p> </p>
-                            <li><strong><li> <i class="far fa-envelope" style="color: #E5BB16;"></i> Email-responsable Plateforme :</strong> nadia.muller@etoilechampenoise.fr</li>
+                            <li><strong><li> <i class="far fa-envelope" style="color: #E5BB16;"></i> Responsable Plateforme :</strong><br>06-48-15-62-57 <br> Stephane.pageot@etoilechampenoise.fr</li>
                         </ul>
                     </div>
                 </div>
