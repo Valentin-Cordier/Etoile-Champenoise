@@ -39,7 +39,7 @@
                             <p> </p>
                             <li><strong><li><i class="far fa-envelope" style="color: #E5BB16;"></i> Email-Administration :</strong> nadia.muller@etoilechampenoise.fr</li>
                             <p> </p>
-                            <li><strong><li><i class="fas fa-mobile" style="color: #E5BB16;"></i> <i class="far fa-envelope" style="color: #E5BB16;"></i> Responsable Plateforme :</strong><br>06-48-15-62-57 <br> Stephane.pageot@etoilechampenoise.fr</li>
+                            <li><strong><li><i class="fas fa-mobile" style="color: #E5BB16;"></i> <i class="far fa-envelope" style="color: #E5BB16;"></i>  Responsable Plateforme :</strong><br>06-48-15-62-57 <br> Stephane.pageot@etoilechampenoise.fr</li>
                         </ul>
                     </div>
                 </div>
@@ -51,6 +51,8 @@
                     <hr style="background-color:white;">
                     <h4 class="text-center" style="color:#E5BB16">&copy Etoile Champenoise 2019</h4>
                     <a href="mentions.php" class="a">Mentions Légales</a>
+                    &nbsp; &nbsp; &nbsp;
+                    <a href="cookies.php" class="a"> Cookies</a>
                 </div>
             </div>
         </div>
