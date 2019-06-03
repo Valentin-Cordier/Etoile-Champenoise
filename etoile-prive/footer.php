@@ -51,7 +51,6 @@
                     <hr style="background-color:white;">
                     <h4 class="text-center" style="color:#E5BB16">&copy Etoile Champenoise 2019</h4>
                     <a href="../mentions.php" class="a">Mentions Légales</a>
-                    &nbsp; &nbsp; &nbsp;
                     <a href="../cookies.php" class="a"> Cookies</a>
                 </div>
             </div>

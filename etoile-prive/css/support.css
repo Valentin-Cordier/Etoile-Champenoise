@@ -1,109 +1,104 @@
 /********************************* GENERAL **************************************/
-
-html{
-    height: 100%;
+html {
+  height: 100%;
 }
 
-body{
-    position: relative;
-    min-height: 100%;
-    background-color: white;
-    min-height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    text-align: center;
+body {
+  position: relative;
+  min-height: 100%;
+  background-color: white;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  text-align: center;
 }
 
 h2 {
-    padding-top: 3em;
+  padding-top: 3em;
 }
 
 .espace {
-    height: 3em;
+  height: 3em;
 }
 
 .btn-primary {
-    background-color: rgb(2, 56, 113);
+  background-color: rgb(2, 56, 113);
 }
 
 /****************************** GESTION COMPTE **************************************/
-
 .titreG {
-    text-align: center;
+  text-align: center;
 }
+
 .center-block {
-  float:none;
+  float: none;
 }
+
 .onglet {
-    background-color: rgb(2, 56, 113);
-    color: white;
-    height: 4em;
-    line-height: 4em;
+  background-color: rgb(2, 56, 113);
+  color: white;
+  height: 4em;
+  line-height: 4em;
 }
+
 /********************************* PARRALAXE **************************************/
-
-
 .parallax-window {
-    min-height: 500px;
-    background: transparent;
+  min-height: 500px;
+  background: transparent;
 }
 
 /********************************* PARRALAXE **************************************/
-
-
-a {
+/*a {
     padding:15px;
     display:block;
-  }
+  }*/
+.diamond {
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-bottom-color: #D4CEAC;
+  position: relative;
+  top: -55px;
+  display: block;
+  text-indent: -9999px;
+  margin: 35px auto 45px;
+  transition: all 0.4s ease;
+}
 
-  .diamond {
-      width: 0;
-      height: 0;
-      border: 15px solid transparent;
-      border-bottom-color: #D4CEAC;
-      position: relative;
-      top: -55px;
-      display: block;
-      text-indent: -9999px;
-      margin: 35px auto 45px;
-    transition: all 0.4s ease;
-  }
+.diamond:hover {
+  border-bottom-color: #806868;
+  top: -20px;
+}
 
-  .diamond:hover {
-    border-bottom-color: #806868;
-    top:-20px;
-  }
+.diamond:after {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-top-color: #D4CEAC;
+  transition: all 0.1s linear;
+}
 
-  .diamond:after {
-      content: '';
-      position: absolute;
-      left: -15px;
-      top: 15px;
-      width: 0;
-      height: 0;
-      border: 15px solid transparent;
-      border-top-color: #D4CEAC;
-    transition: all 0.1s linear;
-  }
+.diamond:hover:after {
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 0;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-bottom-color: #806868;
+}
 
-  .diamond:hover:after {
-      content: '';
-      position: absolute;
-      left: -15px;
-      top: 0;
-      width: 0;
-      height: 0;
-      border: 15px solid transparent;
-      border-bottom-color: #806868;
-  }
-<<<<<<< HEAD
-=======
+<<<<<<< HEAD=======.annee {
+  font-size: 2.2em;
+  font-weight: 700;
+  background-color: rgb(255, 255, 0);
+  border: 1px solid black;
+}
 
-  .annee {
-      font-size: 2.2em;
-      font-weight: 700;
-      background-color: rgb(255, 255, 0);
-      border: 1px solid black;
-  }
->>>>>>> test
+>>>>>>>test

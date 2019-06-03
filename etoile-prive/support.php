@@ -268,9 +268,8 @@ if(!isset($_SESSION['admin'])){
 			?>
 			</div>
 		</div>
-		<?php
-			include 'footer.php';
-			?>
+	</div>
+		<?php	include 'footer.php';?>
 
 		<!----------------------------- SCRIPT ----------------------->
 		<script src="js/main.js"></script>
