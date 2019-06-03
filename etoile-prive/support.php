@@ -206,7 +206,10 @@ if(!isset($_SESSION['admin'])){
 				if(isset($_POST['submit1'])){
 
 					$dbh->query("UPDATE message SET contenu='$cont' WHERE id_message=1");
-					header('support.php');
+					echo'
+					<SCRIPT LANGUAGE="JavaScript">
+					document.location.href="support.php#2"
+					</SCRIPT>';
 					}
 				?>
 				<div class="col-xl-4 col-lg-4 col-md-3 col-sm-12 col-12"></div>
@@ -235,7 +238,10 @@ if(!isset($_SESSION['admin'])){
 				if(isset($_POST['submit2'])){
 
 					$dbh->query("INSERT INTO message (`titre`, `contenu`, `date`) VALUES ('$titre', '$conte','$date') ");
-					header('support.php');
+					echo'
+					<SCRIPT LANGUAGE="JavaScript">
+					document.location.href="support.php#2"
+					</SCRIPT>';
 					}
 
 				?>

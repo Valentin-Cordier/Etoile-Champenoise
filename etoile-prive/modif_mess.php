@@ -66,7 +66,10 @@ if(!isset($_SESSION['admin'])){
 				if(isset($_POST['submit2'])){
 					
 					$dbh->query("UPDATE message SET `titre`='$titre', `contenu`='$conte', `date`='$date' WHERE id_message=$current_id"); 
-					header('location:support.php');
+					echo'
+					<SCRIPT LANGUAGE="JavaScript">
+					document.location.href="index.php"
+					</SCRIPT>';
 					}
 					
 				?>

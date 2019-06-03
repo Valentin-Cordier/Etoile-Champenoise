@@ -11,7 +11,10 @@
    } else {
        echo "Error deleting record: " . $conn->error;
    }
-  header("location:../../support.php")
+   echo'
+   <SCRIPT LANGUAGE="JavaScript">
+   document.location.href="../../support#2.php"
+   </SCRIPT>';
   
    
    ?>

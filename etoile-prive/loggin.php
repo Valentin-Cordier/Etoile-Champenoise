@@ -68,7 +68,10 @@
             header('location:index.php');}
             elseif($user['type']==2){
                 $_SESSION['admin'] = $_POST['email'];
-            header('location:index.php');
+                echo'
+                <SCRIPT LANGUAGE="JavaScript">
+                document.location.href="index.php"
+                </SCRIPT>';
             }
         }else{
            echo "<div class='alert alert-light fixed-top col-8 offset-2 mt-5 text-center' role='alert'>

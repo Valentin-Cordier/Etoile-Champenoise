@@ -68,7 +68,10 @@ $var1= $_POST['login'];
 $var2= $_POST['mdp'];
 if(isset($_POST['submit'])){
 $dbh->query("UPDATE `login` SET `login` = '$var1', `mdp` = '$var2' WHERE `login`.`IDlogin`= $current_id");
-header('location:support.php');
+echo'
+<SCRIPT LANGUAGE="JavaScript">
+document.location.href="support.php#1"
+</SCRIPT>';
 }
 ?>
 </body>

@@ -79,7 +79,10 @@ $var4= $_POST['destination'];
 $var5= $_POST['dpt'];
 if(isset($_POST['submit1'])){
 $dbh->query("UPDATE `traction` SET `TONNE` = '$var1', `PALETTE` = '$var2', `KMS` = '$var3', `destination` = '$var4', `dpt` = '$var5' WHERE `traction`.`id_traction`= $current_id");
-header('location:tarif-t.php');
+echo'
+<SCRIPT LANGUAGE="JavaScript">
+document.location.href="tarif-t.php"
+</SCRIPT>';
 }
 ?>
 </body>

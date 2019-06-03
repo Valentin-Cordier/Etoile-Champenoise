@@ -67,8 +67,8 @@ include 'inc/interface/verif_co.php';
               <p class='card-text'>".$su['contenu']."</p>");
               if(isset($_SESSION['admin'])){
                 echo "<div class='row d-flex justify-content-center'>
-								<button href='modif_mess.php?id=".$su['id_message']."' class='btn btn-primary mr-3'>Modifier</button>
-								<a href='inc/intedelete_mess.php?id=".$su['id_message']."' class='btn btn-danger'>Supprimer</a>
+								<a href='modif_mess.php?id=".$su['id_message']."' class='btn btn-primary mr-3'>Modifier</a>
+								<a href='inc/interface/delete_mess.php?id=".$su['id_message']."' class='btn btn-danger'>Supprimer</a>
 							</div>";
               }
 							echo"
