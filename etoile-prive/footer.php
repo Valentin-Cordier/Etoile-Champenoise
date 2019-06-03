@@ -30,6 +30,7 @@
                             <li> <i class="fas fa-phone" style="color: #E5BB16;"></i> +33 (0)3 26 21 56 21</li>
                             <li> <i class="fas fa-fax" style="color: #E5BB16;"></i> +33 (0)3 26 21 56 92</li>
                             <li> <i class="fas fa-mobile" style="color: #E5BB16;"></i> +33 (0)6 32 54 47 34</li>
+                            <li><strong> Responsable Plateforme : <br><i class="fas fa-mobile" style="color: #E5BB16;"></i></strong> 06 48 15 62 57</li>
                         </ul>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 align-self-center">
@@ -37,9 +38,9 @@
                             <h4 style="color:white;">Email</h4>
                             <li><strong> <i class="far fa-envelope" style="color: #E5BB16;"></i> Email-Exploitation :</strong> transit@etoileschampenoise.fr</li>
                             <p> </p>
-                            <li><strong><li><i class="far fa-envelope" style="color: #E5BB16;"></i> Email-Administration :</strong> nadia.muller@etoilechampenoise.fr</li>
+                            <li><strong><i class="far fa-envelope" style="color: #E5BB16;"></i> Email-Administration :</strong> nadia.muller@etoilechampenoise.fr</li>
                             <p> </p>
-                            <li><strong><li><i class="fas fa-mobile" style="color: #E5BB16;"></i> <i class="far fa-envelope" style="color: #E5BB16;"></i>  Responsable Plateforme :</strong><br>06-48-15-62-57 <br> Stephane.pageot@etoilechampenoise.fr</li>
+                            <li><strong><i class="far fa-envelope" style="color: #E5BB16;"></i>  Responsable Plateforme :</strong><br> Stephane.pageot@etoilechampenoise.fr</li>
                         </ul>
                     </div>
                 </div>
