@@ -18,7 +18,7 @@
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 align-self-center">
                         <ul style="color:white; list-style: none;">
-                            <h4 style="color:white;">Adresse</h4>
+                            <h4 style="color:white;"><i class="fas fa-home"style="color:#E5BB16"></i> Adresse</h4>
                             <li>Rue des Crayères</li>
                             <li>Parc Industriel de Référence</li>
                             <li>51520 RECY</li>
@@ -26,7 +26,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 align-self-center">
                         <ul style="color:white; list-style: none;">
-                            <h4 style="color:white;">Contactez-Nous</h4>
+                            <h4 style="color:white;"><i class="fas fa-address-book" style="color:#E5BB16"></i> Contactez-Nous</h4>
                             <li> <i class="fas fa-phone" style="color: #E5BB16;"></i> +33 (0)3 26 21 56 21</li>
                             <li> <i class="fas fa-fax" style="color: #E5BB16;"></i> +33 (0)3 26 21 56 92</li>
                             <li> <i class="fas fa-mobile" style="color: #E5BB16;"></i> +33 (0)6 32 54 47 34</li>
