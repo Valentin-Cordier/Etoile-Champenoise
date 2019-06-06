@@ -1,6 +1,6 @@
 <?php session_start();
-if(!isset($_SESSION['admin'])){
-	header('location:loggin.php');}?>
+include 'inc/interface/verif_co.php';
+?>
 <!DOCTYPE html>
 <html>
 
@@ -102,7 +102,8 @@ if(!isset($_SESSION['admin'])){
 				$log= $_POST['login'];
 				$mdp = $_POST['mdp'];
 				$type =$_POST['type'];
-				$dbh->query("INSERT INTO login (`login`, `mdp`, `islocked`, `type`) VALUES ('$log', '$mdp','0', '$type')");
+				$pass_hache = password_hash($mdp, PASSWORD_BCRYPT);
+				$dbh->query("INSERT INTO login (`login`, `mdp`, `islocked`, `type`) VALUES ('$log', '$pass_hache','0', '$type')");
 			}
 			?>
 

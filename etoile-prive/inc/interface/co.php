@@ -3,8 +3,8 @@
 
 $host_name = 'localhost';
 $database="mbs";
-$user_name = 'yrenaux';
-$password = 'toor';
+$user_name = 'Jules';
+$password = 'fefe8cb08';
 
 
 $dbh = null;

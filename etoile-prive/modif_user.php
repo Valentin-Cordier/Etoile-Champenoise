@@ -1,6 +1,6 @@
 <?php session_start();
-if(!isset($_SESSION['admin'])){
-	header('location:loggin.php');}?>
+include 'inc/interface/verif_co.php';
+?>
 <!DOCTYPE html>
 <html>
 
@@ -65,9 +65,10 @@ if(!isset($_SESSION['admin'])){
 </form>
 <?php
 $var1= $_POST['login'];
-$var2= $_POST['mdp'];
+$var2= $_POST['type'];
+$pass_hache = password_hash($_POST['mdp'], PASSWORD_BCRYPT);
 if(isset($_POST['submit'])){
-$dbh->query("UPDATE `login` SET `login` = '$var1', `mdp` = '$var2' WHERE `login`.`IDlogin`= $current_id");
+$dbh->query("UPDATE `login` SET `login` = '$var1', `mdp` = '$pass_hache', `type`= '$var2' WHERE `login`.`IDlogin`= $current_id");
 echo'
 <SCRIPT LANGUAGE="JavaScript">
 document.location.href="support.php#1"

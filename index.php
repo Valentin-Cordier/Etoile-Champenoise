@@ -117,48 +117,47 @@
 
     <!-------------------------------------- DIAGONALE ------------------------>
 
-    <div class='diagonale'>
-        <div class='image-left'>
-            <div class="container-fluid diagonale">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 align-self-center">
-                        <div class="carre-blanc rounded p-5">
-                            <h2 class="infos mb-4">
-                                <span class="infos-lower"><i><b><span style="color:rgb(196, 155, 43);">l'ETOILE
-                                                Champenoise
-                                            </span></b></i> c'est :</span>
-                            </h2>
+    <div class="row d-flex flex-wrap-reverse">
+            <div class=" col-lg-6 col-md-12 col-sm-12 col-12 rounded p-0 d-flex align-items-center ">
+            <div class="mx-auto p-5 border border-primary rounded">
+            <h2 class="infos mb-4">
+                    <span class="infos-lower"><i><b><span style="color:rgb(196, 155, 43);">l'ETOILE
+                                    Champenoise
+                                </span></b></i> c'est :</span>
+                </h2>
 
-                            <p class="texteDiagonale"><i class="fas fa-balance-scale icone-caracteristique"></i>
-                                300 tonnes de marchandises traitées chaque nuit</p>
-                            <p class="texteDiagonale"><i class="fas fa-truck icone-caracteristique"></i>
-                                2500 expéditions au quotidien </p>
-                            <p class="texteDiagonale"><i class="fas fa-warehouse icone-caracteristique"></i>
-                                6750 mètres carrés
-                            </p>
-
-                        </div>
-                    </div>
+                <p class="texteDiagonale"><i class="fas fa-balance-scale icone-caracteristique"></i>
+                    300 tonnes de marchandises traitées chaque nuit</p>
+                <p class="texteDiagonale"><i class="fas fa-truck icone-caracteristique"></i>
+                    2500 expéditions au quotidien </p>
+                <p class="texteDiagonale"><i class="fas fa-warehouse icone-caracteristique"></i>
+                    6750 mètres carrés
+                </p>
                 </div>
             </div>
+
+        <div class='col-lg-6 col-md-12 col-sm-12 col-12 p-0'>
+        <img src="images/Etoile_13.jpg" width="100%">
         </div>
-        <div class='image-right'></div>
-    </div>
-
-     <!-------------------------------------- CARTE ET TEXTE --------------------------->
-
-
-    <div class="row d-flex " style="background-color:rgb(31, 39, 92)">
-        <img class="col-lg-6 col-sm-12 h-100 " src="images/carte.png">
-        <div class="col-lg-6 col-sm-12 pt-lg-5">
-            <h2 class="mx-auto text-light text-center mt-5"><span style="color:rgb(196, 155, 43)">L'ETOILE</span>
-                Champenoise</h2>
-            <p id="txt" class="text-light col-8 offset-2 mt-4">compte 15 associés et dessert 28 départements du Nord
-                et de l’Est de la France en 24 heures. Ses connexions
-                inter-plateformes vers d’autres hubs régionaux permettent
-                de couvrir l’ensemble du territoire national.</p>
         </div>
-    </div>
+
+        <!-------------------------------------- CARTE ET TEXTE --------------------------->
+
+
+        <div class="row d-flex" style="background-color:rgb(31, 39, 92)">
+            <img class="col-lg-6 col-sm-12 h-100 p-0" src="images/4.jpg">
+            <div class="col-lg-6 col-sm-12 pt-lg-5 ">
+            <div class="w-75 p-2  mx-auto ">
+                <h2 class="mx-auto text-light text-center mb-4"><span style="color:rgb(196, 155, 43)">L'ETOILE</span>
+                    Champenoise</h2>
+                <hr class="col-1 mx-auto bg-light">
+                <p id="txt" class="text-light col-10 offset-1 mt-4">compte 15 associés et dessert 28 départements du Nord
+                    et de l’Est de la France en 24 heures. Ses connexions
+                    inter-plateformes vers d’autres hubs régionaux permettent
+                    de couvrir l’ensemble du territoire national.</p>
+                    </div>
+            </div>
+        </div>
 
 
 

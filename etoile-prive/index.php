@@ -42,7 +42,7 @@ include 'inc/interface/verif_co.php';
   <?php include('header.php');?>
 
   <div id="jumbotron" class="mt-5">
-  <h1 class="w-100 text-center mt-5 pt-5 text-light" id="tit">Bonjour <span><?php if(isset($_SESSION['admin'])){echo $_SESSION['admin'];}else{echo$_SESSION['user'];}; ?></span> !</h1>
+  <h1 class="w-100 text-center mt-4 pt-5 text-light" id="tit">Bonjour <span><?php if(isset($_SESSION['admin'])){echo $_SESSION['admin'];}else{echo$_SESSION['user'];}; ?></span> !</h1>
   <?php
   include "inc/interface/co.php";
   $sql=$dbh->query('SELECT * FROM message WHERE id_message=1');

@@ -51,21 +51,25 @@
         <p class="mt-5 mb-3 text-light text-center">&copy; Etoile Champenoise 2019</p>
     </form>
     <?php
+
     include 'inc/interface/co.php';
-    $req = $dbh->prepare('SELECT * FROM `login` WHERE `login` = :email AND `mdp` = :passsword');
+
+    $req = $dbh->prepare('SELECT * FROM `login` WHERE `login` = :email ');
+
     if(isset($_POST['submit'])){
-
+     
         $req->execute([
-        'email' => $_POST['email'],
-        'passsword' => $_POST['password']
+        'email' => $_POST['email']
         ]);
-
         $user = $req->fetch();
-
-        if($user){
+        $isPasswordCorrect = password_verify($_POST['password'], $user['mdp']);
+        if($user && $isPasswordCorrect){
             if($user['type']==1){
             $_SESSION['user'] = $_POST['email'];
-            header('location:index.php');}
+            echo'
+                <SCRIPT LANGUAGE="JavaScript">
+                document.location.href="index.php"
+                </SCRIPT>';}
             elseif($user['type']==2){
                 $_SESSION['admin'] = $_POST['email'];
                 echo'
