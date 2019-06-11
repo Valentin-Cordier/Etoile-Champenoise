@@ -3,7 +3,7 @@ include 'inc/interface/verif_co.php';
 
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">

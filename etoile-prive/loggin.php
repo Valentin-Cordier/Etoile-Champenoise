@@ -1,6 +1,6 @@
 <?php session_start()?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -57,7 +57,7 @@
     $req = $dbh->prepare('SELECT * FROM login WHERE login = :email ');
 
     if(isset($_POST['submit'])){
-     
+
         $req->execute([
         'email' => $_POST['email']
         ]);

@@ -2,7 +2,7 @@
 if(!isset($_SESSION['admin'])){
 	header('location:loggin.php');}?>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
 	<meta charset="utf-8">
@@ -64,14 +64,14 @@ if(!isset($_SESSION['admin'])){
 				$titre=$_POST['titre'];
 				$date =$_POST['date'];
 				if(isset($_POST['submit2'])){
-					
-					$dbh->query("UPDATE message SET `titre`='$titre', `contenu`='$conte', `date`='$date' WHERE id_message=$current_id"); 
+
+					$dbh->query("UPDATE message SET `titre`='$titre', `contenu`='$conte', `date`='$date' WHERE id_message=$current_id");
 					echo'
 					<SCRIPT LANGUAGE="JavaScript">
 					document.location.href="index.php"
 					</SCRIPT>';
 					}
-					
+
 				?>
 				</form>
 

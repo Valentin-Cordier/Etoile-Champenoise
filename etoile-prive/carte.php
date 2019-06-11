@@ -1,7 +1,7 @@
 <?php session_start();
 include 'inc/interface/verif_co.php'?>
 <!DOCTYPE html>
-<html>
+<html lang="fr" dir="ltr">
 
 <head>
   <meta charset="utf-8">
