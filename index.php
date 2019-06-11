@@ -53,7 +53,7 @@
                 <div class="row">
 
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <h3 style="color:rgb(196, 155, 43)" class="col-6 mx-auto mb-5">Une porte ouverte sur L'Europe:
+                        <h3 style="color:rgb(196, 155, 43)" class="col-lg-6 col-10 mx-auto mb-5">Une porte ouverte sur L'Europe:
                             <span style="color:white"><strong>HUB</strong></span> de transit européen pour la <span
                                 style="color:white"><strong>MESSAGERIE</strong></span>
                             et les <span style="color:white"><strong>PALETTES</strong></span></h3>
@@ -72,7 +72,7 @@
             </div>
         </div>
 
-        <div class="w-100 pt-5 pb-5 d-flex flex-lg-row flex-sm-column justify-content-around"
+        <div class="w-100 pt-5 pb-5 d-flex flex-lg-row flex-sm-column flex-column justify-content-around"
             style="background:rgb(196, 155, 43);color:rgb(31, 39, 92)">
             <h2><span class="text-light">HUB</span> facilitateur de transport
                 <h2><span class="text-light">OUVERTURE 24h/24h</span> 5 jours sur 7</h2>
@@ -116,14 +116,15 @@
     </div>
 
     <!-------------------------------------- DIAGONALE ------------------------>
+    
 
-    <div class="row d-flex flex-wrap-reverse">
+    <div class="row d-flex flex-wrap-reverse" style="background-color:rgb(196, 155, 43);">
             <div class=" col-lg-6 col-md-12 col-sm-12 col-12 rounded p-0 d-flex align-items-center ">
-            <div class="mx-auto p-5 border border-primary rounded">
+            <div class="mx-auto p-5 border border-dark shadow rounded text-light" style="background-color:rgb(31, 39, 92)">
             <h2 class="infos mb-4">
-                    <span class="infos-lower"><i><b><span style="color:rgb(196, 155, 43);">l'ETOILE
-                                    Champenoise
-                                </span></b></i> c'est :</span>
+                    <span class="infos-lower"><i><b><span style="color:rgb(196, 155, 43">l'ETOILE
+                    </span>  Champenoise
+                                </b></i> c'est :</span>
                 </h2>
 
                 <p class="texteDiagonale"><i class="fas fa-balance-scale icone-caracteristique"></i>
@@ -137,21 +138,21 @@
             </div>
 
         <div class='col-lg-6 col-md-12 col-sm-12 col-12 p-0'>
-        <img src="images/Etoile_13.jpg" width="100%">
+        <img src="images/Etoile_13.jpg" height="100%" width="100%">
         </div>
         </div>
 
         <!-------------------------------------- CARTE ET TEXTE --------------------------->
 
 
-        <div class="row d-flex" style="background-color:rgb(31, 39, 92)">
+        <div class="row d-flex" style="background-color:rgb(31, 39, 92);color:rgb(31, 39, 92)">
             <img class="col-lg-6 col-sm-12 h-100 p-0" src="images/4.jpg">
-            <div class="col-lg-6 col-sm-12 pt-lg-5 ">
-            <div class="w-75 p-2  mx-auto ">
-                <h2 class="mx-auto text-light text-center mb-4"><span style="color:rgb(196, 155, 43)">L'ETOILE</span>
+            <div class="col-lg-6 col-sm-12 pt-lg-3 d-flex align-items-center" >
+            <div class="w-75 p-3 mx-auto border border-dark shadow rounded " style="background-color:rgb(196, 155, 43);">
+                <h2 class="mx-auto text-center mb-2"><span style="color:rgb(31, 39, 92)">L'ETOILE</span>
                     Champenoise</h2>
-                <hr class="col-1 mx-auto bg-light">
-                <p id="txt" class="text-light col-10 offset-1 mt-4">compte 15 associés et dessert 28 départements du Nord
+                <hr class="col-1 mx-auto " style="background-color:rgb(31, 39, 92)">
+                <p id="txt" class=" col-10 offset-1 mt-3">compte 15 associés et dessert 28 départements du Nord
                     et de l’Est de la France en 24 heures. Ses connexions
                     inter-plateformes vers d’autres hubs régionaux permettent
                     de couvrir l’ensemble du territoire national.</p>

@@ -54,7 +54,7 @@
 
     include 'inc/interface/co.php';
 
-    $req = $dbh->prepare('SELECT * FROM `login` WHERE `login` = :email ');
+    $req = $dbh->prepare('SELECT * FROM login WHERE login = :email ');
 
     if(isset($_POST['submit'])){
      
