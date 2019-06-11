@@ -119,8 +119,8 @@
     
 
     <div class="row d-flex flex-wrap-reverse" style="background-color:rgb(196, 155, 43);">
-            <div class=" col-lg-6 col-md-12 col-sm-12 col-12 rounded p-0 d-flex align-items-center ">
-            <div class="mx-auto p-5 border border-dark shadow rounded text-light" style="background-color:rgb(31, 39, 92)">
+            <div class=" col-lg-6 col-md-12 col-sm-12 col-12 rounded p-2 d-flex align-items-center ">
+            <div class="mx-auto p-4 w-75 border border-dark shadow rounded text-light" style="background-color:rgb(31, 39, 92)">
             <h2 class="infos mb-4">
                     <span class="infos-lower"><i><b><span style="color:rgb(196, 155, 43">l'ETOILE
                     </span>  Champenoise
