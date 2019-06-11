@@ -50,7 +50,7 @@ include 'inc/interface/verif_co.php';?>
         <div class="container-fluid">
           <form method="POST" action="#" class="col-12 text-center offset-3 mt-5">
               <select class="select" name="name">
-                <option selected>Sélection de votre partenaire</option>
+                <option selected>Sélection de votre partenaire remettant</option>
                 <?php
                 $req = $dbh->prepare('SELECT * FROM user ORDER BY nom ');
                 $req->execute();
